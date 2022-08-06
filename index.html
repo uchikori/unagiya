@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="dist/images/favicon.ico" type="image">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="テスト">
+    <title>鈴木工業株式会社</title>
+    <!-- OGP設定 -->
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:image" content="https://firework.uchiwa-design.net/dist/images/ogp.jpg">
+    <meta property="og:title" content="鈴木工業株式会社">
+    <meta property="og:description" content="テスト">
+    <meta property="og:url" content="https://firework.uchiwa-design.net">
+    <meta property="og:site_name" content="鈴木工業株式会社">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Noto Serif読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
+    <!-- Noto Sans読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&display=swap" rel="stylesheet">
+    <!-- ファーストビュー読み込み -->
+    <link rel="stylesheet" href="dist/css/fv.css">
+    <!-- メインスタイル遅延読み込み -->        
+    <link rel="preload" href="dist/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" >
+</head>
+<body>
+
+    <div class="splash">
+        <figure class="splash__logo">
+            <img src="dist/images/logo.png" class="fade-up" alt="">
+        </figure>
+    </div>
+
+    <!-- ▼ヘッダー -->
+    <header class="header">
+        <div class="header__inner container-wide">
+            <h1 class="header__left">
+                <a href="/" class="logo header__logo"><img src="dist/images/logo.svg" width="349" height="100" alt="鈴木工業株式会社"></a>
+            </h1>
+
+            <div class="header__right">
+                <nav class="gloval-navi">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="/company" class="nav-link">鈴木工業について<span class="menu-item__icon"></span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/company#SDGs" class="nav-link">SDGsへの取り組み<span class="menu-item__icon"></span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/recruit" class="nav-link">採用情報<span class="menu-item__icon"></span></a>
+                        </li>
+                        <li class="menu-item button__color_orange">
+                            <a href="/recruit#entry" class="nav-link">ENTRY<span class="menu-item__icon"></span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__cta">
+                    <a href="/company#contact" class="header__button header-mail">
+                        <span class="header__button-icon"><img src="dist/images/mail.svg" width="40" height="40" alt="お問い合わせ"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="humberger header__humberger">
+                <span class="humberger__line"></span>
+                <span class="humberger__line"></span>
+                <span class="humberger__line"></span>
+            </div>
+        </div>
+    </header>
+    <!-- ▲ヘッダー -->
+        
+    <main>
+        <!-- ▼メインビジュアル -->
+        <section class="main-visual">
+            <div class="main-visual__bg">
+                <div class="main-visual__inner">
+                    <picture class="main-visual__image">
+                        <source media="(min-width: 769px)" type="image/webp" srcset="dist/images/main-visual.webp, dist/images/main-visual@2x.webp 2x"> 
+                        <source media="(min-width: 769px)" type="image/jpeg" srcset="dist/images/main-visual.jpg, dist/images/main-visual@2x.jpg 2x">
+                        <source media="(max-width: 768px)" type="image/webp" srcset="dist/images/main-visual-sp@2x.webp"> 
+                        <source media="(max-width: 768px)" type="image/jpeg" srcset="dist/images/main-visual-sp@2x.jpg">  
+                        <img srcset="dist/images/main-visual.jpg" src="dist/images/main-visual.jpg" width="1920" height="980" alt="">
+                    </picture>
+                    <picture class="main-visual__image">
+                        <source media="(min-width: 769px)" type="image/webp" srcset="dist/images/main-visual-02.webp, dist/images/main-visual-02@2x.webp 2x"> 
+                        <source media="(min-width: 769px)" type="image/jpeg" srcset="dist/images/main-visual-02.jpg, dist/images/main-visual-02@2x.jpg 2x">
+                        <source media="(max-width: 768px)" type="image/webp" srcset="dist/images/main-visual-02-sp@2x.webp"> 
+                        <source media="(max-width: 768px)" type="image/jpeg" srcset="dist/images/main-visual-02-sp@2x.jpg">  
+                        <img srcset="dist/images/main-visual-02.jpg" src="dist/images/main-visual-02.jpg" width="1920" height="980" alt="">
+                    </picture>
+                    <picture class="main-visual__image">
+                        <source media="(min-width: 769px)" type="image/webp" srcset="dist/images/main-visual-03.webp, dist/images/main-visual-03@2x.webp 2x"> 
+                        <source media="(min-width: 769px)" type="image/jpeg" srcset="dist/images/main-visual-03.jpg, dist/images/main-visual-03@2x.jpg 2x">
+                        <source media="(max-width: 768px)" type="image/webp" srcset="dist/images/main-visual-03-sp@2x.webp"> 
+                        <source media="(max-width: 768px)" type="image/jpeg" srcset="dist/images/main-visual-03-sp@2x.jpg">  
+                        <img srcset="dist/images/main-visual-03.jpg" src="dist/images/main-visual-03.jpg" width="1920" height="980" alt="">
+                    </picture>
+                    <picture class="main-visual__image">
+                        <source media="(min-width: 769px)" type="image/webp" srcset="dist/images/main-visual-04.webp, dist/images/main-visual-04@2x.webp 2x"> 
+                        <source media="(min-width: 769px)" type="image/jpeg" srcset="dist/images/main-visual-04.jpg, dist/images/main-visual-04@2x.jpg 2x">
+                        <source media="(max-width: 768px)" type="image/webp" srcset="dist/images/main-visual-04-sp@2x.webp"> 
+                        <source media="(max-width: 768px)" type="image/jpeg" srcset="dist/images/main-visual-04-sp@2x.jpg">  
+                        <img srcset="dist/images/main-visual-04.jpg" src="dist/images/main-visual-04.jpg" width="1920" height="980" alt="">
+                    </picture>
+                </div>
+            </div>
+            <div class="main-visual__container wide-container">
+                <div class="main-visual__textbox">
+                    <h1 class="main-visual__copy">
+                        土木で働く、<br>
+                        オホーツクの未来を支える、<br>
+                        それが鈴木工業
+                    </h1>
+                    <a href="/recruit" class="main-visual__link">採用情報へ</a>
+                </div>
+            </div>
+        </section>
+         <!-- ▲メインビジュアル -->
+
+         <!-- ▼鈴木工業について -->
+         <section class="about section">
+            <div class="about__inner container scrollTrigger">
+                <div class="about__left ">
+                    <h2 class="about__title section__title_line_2 bgextend">
+                        <span class="bgappearTrigger">社員の充実は会社の成長、</span><br>
+                        <span class="bgappearTrigger">会社の成長は社会への貢献</span>
+                    </h2>
+                    <p class="about__text text-box align-left scrollTrigger">
+                        弊社は、1965年の創業以来、「社員やその家族を守り、幸福にする、そして、正しい道を歩み、社会に信頼され、貢献できる会社を目指す」という経営理念のもと、土木工事業を通じて社会の発展に寄与してまいりました。<br>
+                        少子高齢化や気候変動、自然災害等社会がこれら課題に立ち向かう中で、
+                        この経営理念はかつてなく大切な意味を持っていると考えています。<br>
+                        <br>
+                        諸所の社内制度を充実させ、社員全員が明るく、楽しく、笑顔で、人として成長することができるような働きやすい会社を作っていきます。<br>
+                        そのような社員がいる会社だからこそ、国土の防災及びインフラ整備等の企業活動を通じて、社会に信頼され、社会の発展に寄与し続けることが可能であると思います。<br>
+                        <br>
+                        これからも過去に培ってきた古き良き経験・ノウハウを踏襲しつつ常に新たなことに挑戦し、人びとの安心できる災害に強い国土の形成に尽力してまいります。<br>
+                        <br>
+                        今後とも更なるお引き立てを賜りますようお願い申し上げます。
+
+                    </p>
+                </div>
+                <div class="about__right">
+                    <picture class="about__image bgextend">
+                        <source media="(min-width: 769px)" type="image/webp" srcset="dist/images/about-image.webp, dist/images/about-image@2x.webp 2x"> 
+                        <source media="(min-width: 769px)" type="image/jpeg" srcset="dist/images/about-image.jpg, dist/images/about-image@2x.jpg 2x">
+                        <source media="(max-width: 768px)" type="image/webp" srcset="dist/images/about-image-sp@2x.webp"> 
+                        <source media="(max-width: 768px)" type="image/jpeg" srcset="dist/images/about-image-sp@2x.jpg">  
+                        <img class="bgappearTrigger" srcset="dist/images/about-image.jpg" src="dist/images/about-image.jpg" width="830" height="560" alt="">
+                    </picture>
+                </div>
+            </div>
+         </section>
+         <!-- ▲鈴木工業について -->
+
+         <!-- ▼事業内容 -->
+         <section class="service section">
+            <div class="service__inner container">
+                <h2 class="service__title section__title_text_vertical">
+                    事業内容
+                    <span class="section__title_lang_en">service</span>
+                </h2>
+                <ul class="service__items">
+                    <li class="service__item card01 card01_w_wide scrollTrigger">
+                        <picture class="card01__image bgextend">
+                            <source media="(min-width: 769px)" type="image/webp" srcset="dist/images/card01-01.webp, dist/images/card01-01@2x.webp 2x"> 
+                            <source media="(min-width: 769px)" type="image/jpeg" srcset="dist/images/card01-01.jpg, dist/images/card01-01@2x.jpg 2x">
+                            <source media="(max-width: 768px)" type="image/webp" srcset="dist/images/card01-01-sp@2x.webp"> 
+                            <source media="(max-width: 768px)" type="image/jpeg" srcset="dist/images/card01-01-sp@2x.jpg">  
+                            <img class="bgappearTrigger" srcset="dist/images/card01-01.jpg" src="dist/images/card01-01.jpg" width="640" height="400" alt="">
+                        </picture>
+                        <div class="card01__body">
+                            <h3 class="card01__title">土木工事事業</h3>
+                            <p class="card01__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                        </div>
+                    </li>
+                    <li class="service__item card01 card01_w_wide scrollTrigger">
+                        <picture class="card01__image bgextend">
+                            <source media="(min-width: 769px)" type="image/webp" srcset="dist/images/card01-02.webp, dist/images/card01-02@2x.webp 2x"> 
+                            <source media="(min-width: 769px)" type="image/jpeg" srcset="dist/images/card01-02.jpg, dist/images/card01-02@2x.jpg 2x">
+                            <source media="(max-width: 768px)" type="image/webp" srcset="dist/images/card01-02-sp@2x.webp"> 
+                            <source media="(max-width: 768px)" type="image/jpeg" srcset="dist/images/card01-02-sp@2x.jpg">  
+                            <img class="bgappearTrigger" srcset="dist/images/card01-02.jpg" src="dist/images/card01-02.jpg" width="640" height="400" alt="">
+                        </picture>
+                        <div class="card01__body">
+                            <h3 class="card01__title">とび・土工工事事業</h3>
+                            <p class="card01__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                        </div>
+                    </li>
+                    <li class="service__item card01 scrollTrigger">
+                        <picture class="card01__image bgextend">
+                            <source media="(min-width: 769px)" type="image/webp" srcset="dist/images/card01-03.webp, dist/images/card01-03@2x.webp 2x"> 
+                            <source media="(min-width: 769px)" type="image/jpeg" srcset="dist/images/card01-03.jpg, dist/images/card01-03@2x.jpg 2x">
+                            <source media="(max-width: 768px)" type="image/webp" srcset="dist/images/card01-03-sp@2x.webp"> 
+                            <source media="(max-width: 768px)" type="image/jpeg" srcset="dist/images/card01-03-sp@2x.jpg">  
+                            <img class="bgappearTrigger" srcset="dist/images/card01-03.jpg" src="dist/images/card01-03.jpg" width="420" height="400" alt="">
+                        </picture>
+                        <div class="card01__body">
+                            <h3 class="card01__title">鋼構造物工事業</h3>
+                            <p class="card01__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                        </div>
+                    </li>
+                    <li class="service__item card01 scrollTrigger">
+                        <picture class="card01__image bgextend">
+                            <source media="(min-width: 769px)" type="image/webp" srcset="dist/images/card01-04.webp, dist/images/card01-04@2x.webp 2x"> 
+                            <source media="(min-width: 769px)" type="image/jpeg" srcset="dist/images/card01-04.jpg, dist/images/card01-04@2x.jpg 2x">
+                            <source media="(max-width: 768px)" type="image/webp" srcset="dist/images/card01-04-sp@2x.webp"> 
+                            <source media="(max-width: 768px)" type="image/jpeg" srcset="dist/images/card01-04-sp@2x.jpg">  
+                            <img class="bgappearTrigger" srcset="dist/images/card01-04.jpg" src="dist/images/card01-04.jpg" width="420" height="400" alt="">
+                        </picture>
+                        <div class="card01__body">
+                            <h3 class="card01__title">舗装工事業</h3>
+                            <p class="card01__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                        </div>
+                    </li>
+                    <li class="service__item card01 scrollTrigger">
+                        <picture class="card01__image bgextend">
+                            <source media="(min-width: 769px)" type="image/webp" srcset="dist/images/card01-05.webp, dist/images/card01-05@2x.webp 2x"> 
+                            <source media="(min-width: 769px)" type="image/jpeg" srcset="dist/images/card01-05.jpg, dist/images/card01-05@2x.jpg 2x">
+                            <source media="(max-width: 768px)" type="image/webp" srcset="dist/images/card01-05-sp@2x.webp"> 
+                            <source media="(max-width: 768px)" type="image/jpeg" srcset="dist/images/card01-05-sp@2x.jpg">  
+                            <img class="bgappearTrigger" srcset="dist/images/card01-05.jpg" src="dist/images/card01-05.jpg" width="420" height="400" alt="">
+                        </picture>
+                        <div class="card01__body">
+                            <h3 class="card01__title">解体工事業</h3>
+                            <p class="card01__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+         </section>
+         <!-- ▲事業内容 -->
+
+         <!-- ▼インスタ -->
+         <section class="news section">
+            <div class="news__inner container">
+                <h2 class="news__title section__title">
+                    お知らせ
+                    <span class="section__title_lang_en">news</span>
+                </h2>
+                <div id="sbi_images" class="sbi_images">
+                    <div class="sbi_item"></div>
+                    <div class="sbi_item"></div>
+                    <div class="sbi_item"></div>
+                    <div class="sbi_item"></div>
+                    <div class="sbi_item"></div>
+                </div>
+                <div id="sbi_load">
+                    <a href="/" class="sbi_load_btn">さらに読み込む</a>
+                    <a href="/" class="sbi_follow_btn">Instagramでフォロー</a>
+                </div>
+            </div>
+         </section>
+         <!-- ▲インスタ -->
+
+         <!-- ▼採用情報 -->
+         <section class="recruit-sec">
+            <div class="recruit-sec__bg">
+                <div class="recruit-sec__inner container">
+                    <h2 class="recruit-sec__title section__title_text_vertical">
+                        採用<span class="text_white">情報</span>
+                        <span class="section__title_lang_en">recruit</span>
+                    </h2>
+                    
+                </div>
+
+            </div>
+            <div class="recruit-sec__body scrollTrigger fadeInUp">
+                <h3 class="head3__title align-center">人として成長する</h3>
+                <p class="recruit-sec__text text-box align-center">
+                    鈴木工業は社員全員が明るく、楽しく、笑顔で、人として成長することができるような<br class="pc">
+                    働きやすい会社を作ることを常に目指しています。
+                </p>
+                <div class="recruit-sec__button button button__color_white"><a href="/recruit">採用情報を見る</a></div>
+            </div>
+         </section>
+         <!-- ▲採用情報 -->
+
+         <!-- ▼リンク -->
+         <section class="page-link">
+            <div class="page-link__inner container">
+                
+            </div>
+         </section>
+         <!-- ▲リンク -->
+    </main>
+
+    <!-- ▼フッター -->
+    <footer class="footer">
+       
+    </footer>
+    <!-- ▲フッター -->
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+<script defer src="dist/js/main.min.js"></script>
+</body>
+</html>

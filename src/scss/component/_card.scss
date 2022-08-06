@@ -1,0 +1,87 @@
+@use '../global' as g; 
+//カードブロック
+.card01{
+    width: calc((100% - 40px) / 3);
+    @include g.wide-container{
+        width: calc((100% - 4rem) / 3)
+    }
+    @include g.tab{
+        width: 100%;
+    }
+    &_w_wide{
+        width: calc((100% - 20px) / 2);
+        @include g.wide-container{
+            width: calc((100% - 2rem) / 2)
+        }
+        @include g.tab{
+            width: 100%;
+        }
+    }
+    &__image{
+        width: 100%;
+        overflow: hidden;
+        aspect-ratio: 420 / 400;
+        @include g.tab{
+            aspect-ratio: 640 / 400;
+        }
+        .card01_w_wide &{
+            aspect-ratio: 640 / 400;
+            img{
+                height: auto;
+            }
+        }
+        img{
+            height: auto;
+        }
+    }
+    &__body{
+        padding: 26px 10px 19px;
+        position: relative;
+        @include g.wide-container{
+            padding: 2.6rem 1rem 1.9rem;
+        }
+        @include g.tab{
+            padding: 2.6rem 0 1.9rem;
+        }
+        &:before{
+            content: "";
+            display: block;
+            width: 180px;
+            height: 7px;
+            border-radius: 0 0 4px 4px;
+            background-color: g.$color-green;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+        .card01_w_wide &{
+            padding: 26px 20px 19px;
+            @include g.wide-container{
+                padding: 2.6rem 2rem 1.9rem;
+            }
+            @include g.tab{
+                padding: 2.6rem 0 1.9rem;
+            }
+        }
+    }
+    &__title{
+        @include g.font-style(28px, g.$color-black, 900, 1, 0.09em);
+        text-align: center;
+        @include g.wide-container{
+            font-size: 2.8rem;
+        }
+    }
+    &__text{
+        @include g.font-style(16px, g.$color-black, 500, 1.5, 0.09em);
+        text-align: left;
+        font-family: g.$sans;
+        margin-top: 20px;
+        @include g.wide-container{
+            margin-top: 2rem;
+        }
+        @include g.pc{
+            font-size: 1.6rem;
+        }
+    }
+}

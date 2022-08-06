@@ -1,0 +1,71 @@
+@use '../global' as g;
+.pc{
+    @include g.tab{
+        display: none;
+    }
+}
+.tab{
+    display: none;
+    @include g.tab{
+        display: block;
+    }
+}
+//テキストボックス
+p.text-box{
+    @include g.font-style(16px, g.$color-black, 500, 2, 0);
+    font-family: g.$sans;
+    @include g.pc{
+        font-size: 1.6rem;
+    }
+}
+//テキスト色
+.text_white{
+    color: g.$color-white;
+    @include g.pc{
+        color: g.$color-dark;
+    }
+}
+//テキスト向き
+.align-left{
+    text-align: left;
+}
+.align-center{
+    text-align: center;
+}
+.align-rihgt{
+    text-align: right;
+}
+//スクロールアニメーション用
+.bgextend{
+    position: relative;
+    opacity: 0;
+    &:before{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: g.$color-green;
+        .scroll-on &{
+            animation: scroll-lead 1s ease-in-out forwards;
+        }
+    }
+    .scroll-on &{
+        animation: bgextendAnimeBase 1s forwards;
+    }
+}
+.bgappearTrigger{
+    opacity: 0;
+    .scroll-on &{
+        animation: bgextendAnimeSecond 1s forwards;
+        animation-delay: 0.6s;
+    }
+}
+.fadeInUp{
+    opacity: 0;
+    &.scroll-on{
+        animation: fadeUpAnime 1s forwards;
+    }
+}
