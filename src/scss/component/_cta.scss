@@ -1,0 +1,60 @@
+@use '../global' as g; 
+//cta
+.cta{
+    @include g.tab{
+        display: none;
+    }
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 260px;
+    }
+    &__belt{
+        width: 100%;
+        @include g.font-style(16px, g.$color-white, 500, 1, 0.016em);
+        display: block;
+        text-align: center;
+        background-color: g.$color-gold;
+        padding: 2px 0;
+    }
+    &__tel{
+        @include g.font-style(32px, g.$color-gold, 500, 1, 0.032em);
+        margin-top: 4px;
+        span{
+            @include g.font-style(24px, g.$color-gold, 500, 1, 0.032em);
+        }
+    }
+}
+.cta-button{
+    display: none;
+    @include g.tab{
+        display: block;
+        width: 16rem;
+        height: 16rem;
+        background-color: g.$color-gold;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
+    &__inner{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__icon{
+        width: 5.3rem;
+        aspect-ratio: 53/69;
+        img{
+            height: auto;
+        }
+    }
+    &__tel{
+        @include g.font-style(3.2rem, g.$color-white, 500, 1, 0);
+        margin-top: 2rem;
+    }
+}

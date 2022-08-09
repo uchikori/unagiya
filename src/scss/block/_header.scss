@@ -2,306 +2,113 @@
 // ヘッダー
 .header{
     width: 100%;
-    height: 101px;
-    background-color: transparent;
+    // height: 223px;
+    // background-image: linear-gradient(g.$color-black 50%, rgba(0,0,0,0.3) 80%, rgba(0,0,0,0));
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1000;
-    font-family: g.$font;
-    border-bottom: solid 1px #ccc;
-    @include g.pc{
-        height: 10.1rem;
-    }
-    @include g.tab{
-        height: 8rem;
-    }
-    @include g.sp{
-        height: 6rem;
-    }
-    &.standby{
-        position: fixed;
-        background-color: rgba(255, 255, 255, 0.8);
-        transform: translateY(-100%);
-    }
-    &.fixed{
-        transform: translateY(0%);
-    }
+    // @include g.pc{
+    //     height: 22.3rem;
+    // }
+    // @include g.tab{
+    //     height: 16rem;
+    // }
     &__inner{
         width: 100%;
         height: 100%;
         display: flex;
-        align-items: center;
         justify-content: space-between;
+        padding-top: 30px;
+        // position: relative;
         @include g.tab{
             width: 100%;
+            padding-top: 5rem;
+            align-items: center;
             margin: 0;
         }
-
     }
     &__logo{
         display: block;
-        width: 349px;
-        height: auto;
-        overflow: hidden;
-        aspect-ratio: 349 / 100;
+        width: 370px;
+        aspect-ratio: 370 / 60;
         img{
             width: 100%;
             height: auto;
         }
         @include g.pc{
-            width: 34.9rem;
+            width: 37rem;
         }
         @include g.tab{
-            width: 21.8rem;
+            width: 43.1rem;
+            padding-left: 3.2rem;
         }
     }
     &__right{
        display: flex;
+       align-items:flex-start;
        margin-left: auto;
        gap: 60px;
-       height: 100%;
-       @include g.wide-container{
+       @include g.pc{
            gap: 4rem;
        }
-    }
-    &__button{
-        width: 100px;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-        @include g.pc{
-            width: 10rem;
-            height: 100%;
-        }
-        @include g.tab{
-            width: 8rem;
-        }
-        @include g.sp{
-            width: 6rem;
-        }
-    }
-    &__button-icon{
-        width: 40px;
-        height: 40px;
-        aspect-ratio: 40 /40;
-        overflow: hidden;
-        @include g.pc{
-            width: 4rem;
-            height: 4rem;
-        }
-        img{
-            height: auto;
-        }
-    }
-    &-mail{
-        background-color: g.$color-green;
-        &:hover{
-            filter: brightness(120%);
-        }
     }
 }
 .gloval-navi{
     @include g.tab{
-        width: 100%;
-        background-color: g.$color-white;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 1;
-        transform: translateX(100%);
-        transition: transform 0.3s ease;
-        opacity: 1;
-        visibility: visible;
-        padding: 8rem 0;
-        display: flex;
-        flex-direction: column;
-        gap: 4rem;
-        &.open{
-            transform: translateX(0%);
-            transition: transform 0.3s ease;
-        }
+        position: absolute;
+        top: 183%;
+        right: 3.8%;
     }
     .menu{
         display: flex;
-        align-items: center;
-        gap: 60px;
-        height: 100%;
-        @include g.wide-container{
-            gap: 4rem;
+        -webkit-box-orient: horizontal;
+        align-items: flex-start;
+        gap: 24px;
+        
+        @include g.pc{
+            gap: 2.4rem;
         }
         @include g.tab{
-            width: 91.2vw;
-            padding: 0;
-            margin: 0 auto;
-            flex-direction: column;
-            justify-content: center;
-            gap: 0;
+            gap: 4.6rem;
+
         }
     }
     .menu-item{
-        &.sp-active{
-            display: none;
-            @include g.tab{
-                display: block;
-            }
-        }
+        width: 32px;
+        max-height: 600px;
+        display: block;
+        writing-mode: vertical-lr;
         @include g.tab{
-            width: 100%;
-            border-bottom: solid 1px g.$color-green !important;
-        }
-        &__icon{
-            display: none;
-            @include g.tab{
-                width: 1rem;
-                height: 1.6rem;
-                display: inline-block;
-                background-image: url('../images/button-arrow.svg');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
+            width: 6.1rem;
         }
     }
     .nav-link{
-        font-family: g.$sans;
-        @include g.font-style(18px, g.$color-white, 500, 100px, 0);
-        display: inline-block;
+        width: 100%;
+        @include g.font-style(20px, g.$color-black, 500, 1, 0.02em);
+        display: block;
+        writing-mode: inherit;
+        transition: color 0.3s ease;
+        padding: 8px 6px;
+        background-color: g.$color-white;
+        transition: all 0.3s ease;
+        font-feature-settings: "pkna";
         @include g.pc{
-            font-size: 1.6rem;
-            line-height: 10rem;
+            font-size: 2rem;
+            padding: 1rem 0.8rem;
         }
         @include g.tab{
-            line-height: 1;
-            color: g.$color-black;
-            padding: 2rem 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            font-size: 3.8rem;
+            padding: 1.4rem 1rem;
         }
         &:hover{
-            filter: brightness(120%);
+            background-color: g.$color-gold;
+            color: g.$color-white;
+            transition: all 0.3s ease;
         }
         &.current{
-            color: g.$color-green;
-            position: relative;
-            &:after{
-                content: "";
-                display: block;
-                width: 100%;
-                height: 2px;
-                background-color: g.$color-green;
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                @include g.tab{
-                    display: none;
-                }
-            }
+            color: g.$color-gold;
         }
-        .standby &{
-            color: g.$color-dark;
-        }
-    }
-}
-.drawer-cta{
-    display: none;
-    @include g.tab{
-        display: flex;
-        gap: 2rem;
-        justify-content: center;
-    }
-    @include g.small{
-        flex-direction: column;
-        align-items: center;
-    }
-    &__button{
-        width: 254px;
-        height: 70px;
-        aspect-ratio: 254 / 70;
-        img{
-            height: auto;
-        }
-    }
-}
-.humberger{
-    width: 8rem;
-    height: 8rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1100;
-    cursor: pointer;
-    background-color: g.$color-white;
-    display: none;
-    @include g.tab{
-
-        display: flex;
-    }
-    @include g.sp{
-        width: 6rem;
-        height: 6rem;
-    }
-    &.fixed{
-        position: fixed;
-        top: 0;
-        right: 0;
-    }
-    &__line{
-        width: 35px;
-        height: 3px;
-        background-color: g.$color-green;
-        margin-bottom: 7px;
-        display: block;
-        @include g.pc{
-            width: 3.5rem;
-            height: 0.3rem;
-            margin-bottom: 0.7rem;
-        }
-        &:first-child{
-            transition: transform 0.5s ease;
-        }
-        &:nth-child(2){
-            opacity: 1.0;
-            transition: opacity 0.3s ease;
-        }
-        &:last-child{
-            margin-bottom: 0;
-            transition: transform 0.5s ease;
-        }
-        .menu-active &{
-            &:first-child{
-                transition: transform 0.5s ease;
-                transform: translateY(10px) rotate(45deg);
-                @include g.pc{
-                    transform: translateY(1rem) rotate(45deg);
-                }
-            }
-            &:nth-child(2){
-                opacity: 0;
-                transition: opacity 0.3s ease;
-            }
-            &:last-child{
-                transition: transform 0.5s ease;
-                transform: translateY(-10px) rotate(-45deg);
-                @include g.pc{
-                    transform: translateY(-1rem) rotate(-45deg);
-                }
-            }
-        }
-    }
-    &:before{
-        content: "MENU";
-        @include g.font-style(10px, g.$color-green, 400, 1, 0);
-        display: block;
-        text-align: center;
-        line-height: 1;
-        letter-spacing: 0;
-        margin-bottom: 5px;
     }
 }
 
@@ -312,8 +119,12 @@
     overflow: hidden;
     aspect-ratio: 1920 / 980;
     position: relative;
-    @include g.wide-container{
+    @include g.pc{
         height: 100vh;
+    }
+    @include g.tab{
+        height: 140rem;
+        aspect-ratio: 856/1400;
     }
     img{
         height: 100%;
@@ -353,70 +164,51 @@
     &__container{
         height: 100%;
         display: flex;
+        justify-content: center;
         align-items: center;
     }
     &__textbox{
         position: relative;
-        z-index: 1;
     }
     &__copy{
-       @include g.font-style(48px, g.$color-white, 900, 2, 0.09em);
-       text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-       @include g.pc{
-        font-size: 4.8rem;
-       }
-       @include g.tab{
-        letter-spacing: 0;
-        font-feature-settings: "palt";
-       }
-       @include g.sp{
-        font-size: 2.8rem;
-       }
-    }
-    &__link{
-        @include g.font-style(20px, g.$color-white, 500, 1, 0);
-        font-family: g.$sans;
-        display: flex;
-        align-items: center;
-        margin-top: 50px;
+        width: 105px;
+        aspect-ratio: 105/730;
+        overflow: visible;
         @include g.pc{
-            font-size: 2rem;
-            margin-top: 7.4rem;
+            width: 10.5rem;
         }
-        &:after{
-            content: "";
-            display: inline-block;
-            width: 100px;
-            height: 2px;
-            background-color: g.$color-white;    
-            margin-left: 10px;
-            animation: scroll-lead 3s cubic-bezier(1, 0, 0, 1) infinite;
+        @include g.tab{
+            width: 10rem;
+        }
+        img{
+            filter: drop-shadow(0 0 3.2rem rgba(0, 0, 0, 1));
+            height: auto;
         }
     }
 }
 
 //ローディングアニメーション
-.splash{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background: g.$color-white;
-    text-align: center;
-    color: g.$color-green;
-    &__logo{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 200px;
-    }
-    .fade-up{
-        animation: zoomUpAnime 1.7s forwards;
-        animation-delay: 0.2s;
-        opacity: 0;
-    }
-    &.hide{
-        display: none;
-    }
-}
+// .splash{
+//     position: fixed;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 9999;
+//     background: g.$color-white;
+//     text-align: center;
+//     color: g.$color-green;
+//     &__logo{
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%,-50%);
+//         width: 200px;
+//     }
+//     .fade-up{
+//         animation: zoomUpAnime 1.7s forwards;
+//         animation-delay: 0.2s;
+//         opacity: 0;
+//     }
+//     &.hide{
+//         display: none;
+//     }
+// }

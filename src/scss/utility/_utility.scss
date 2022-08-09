@@ -19,12 +19,7 @@ p.text-box{
     }
 }
 //テキスト色
-.text_white{
-    color: g.$color-white;
-    @include g.pc{
-        color: g.$color-dark;
-    }
-}
+
 //テキスト向き
 .align-left{
     text-align: left;
@@ -35,37 +30,45 @@ p.text-box{
 .align-rihgt{
     text-align: right;
 }
+.tategaki-rl{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+.tategaki-lr{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
 //スクロールアニメーション用
-.bgextend{
-    position: relative;
-    opacity: 0;
-    &:before{
-        content: "";
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: g.$color-green;
-        .scroll-on &{
-            animation: scroll-lead 1s ease-in-out forwards;
-        }
-    }
-    .scroll-on &{
-        animation: bgextendAnimeBase 1s forwards;
-    }
-}
-.bgappearTrigger{
-    opacity: 0;
-    .scroll-on &{
-        animation: bgextendAnimeSecond 1s forwards;
-        animation-delay: 0.6s;
-    }
-}
-.fadeInUp{
-    opacity: 0;
-    &.scroll-on{
-        animation: fadeUpAnime 1s forwards;
-    }
-}
+// .bgextend{
+//     position: relative;
+//     opacity: 0;
+//     &:before{
+//         content: "";
+//         display: block;
+//         width: 100%;
+//         height: 100%;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         background-color: g.$color-green;
+//         .scroll-on &{
+//             animation: scroll-lead 1s ease-in-out forwards;
+//         }
+//     }
+//     .scroll-on &{
+//         animation: bgextendAnimeBase 1s forwards;
+//     }
+// }
+// .bgappearTrigger{
+//     opacity: 0;
+//     .scroll-on &{
+//         animation: bgextendAnimeSecond 1s forwards;
+//         animation-delay: 0.6s;
+//     }
+// }
+// .fadeInUp{
+//     opacity: 0;
+//     &.scroll-on{
+//         animation: fadeUpAnime 1s forwards;
+//     }
+// }

@@ -1,275 +1,66 @@
 @use '../global' as g;
-//▼鈴木工業について
-.about{
+.happiness{
     width: 100%;
-    padding: 160px 0;
-    background-image: url("../images/about_background.webp");
+    padding: 91px 0 57px;
+    background-image: url("../images/kodawari-bg@2x.webp");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    overflow-x: hidden;
     @include g.pc{
-        padding: 16rem 0;
+        padding: 9.1rem 5.7rem;
     }
     @include g.tab{
-        padding: 8rem 0;
+        background-image: url("../images/merit-bg@2x.webp");
+        padding: 3.4rem 0 6.2rem;
+    }
+    &__title{
+        margin-top: -55px;
+        @include g.pc{
+            margin-top: -5.5rem;
+        }
     }
     &__inner{
         display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
         @include g.tab{
             flex-direction: column;
         }
     }
-    &__left{
-        width: 49.23%;
-        @include g.tab{
-            width: 100%;
-            display: contents;
-        }
-    }
-    &__title{
-        width: 100%;
-        @include g.tab{
-            order: 1;
-        }
-    }
-    &__text{
-        width: 86%;
-        margin-top: 60px;
-        @include g.pc{
-            margin-top: 6rem;
-        }
-        @include g.tab{
-            width: 100%;
-            order: 3;
-            margin-top: 4rem;
-        }
-    }
-    &__right{
-        width: 49.23%;
-        margin-left: 20px;
-        position: relative;
-        @include g.pc{
-            margin-left: 6rem;
-        }
-        @include g.tab{
-            width: 100%;
-            margin-left: 0;
-            margin-top: 4rem;
-            order: 2;
-        }
-    }
-    &__image{
-        width: 129%;
-        // height: 560px;
-        overflow: hidden;
-        aspect-ratio: 830 / 560;
-        position: absolute;
-        top: 0;
-        left: 0;
-        @include g.wide-container{
-            // width: 83rem;
-            // height: 56rem;
-        }
-        @include g.tab{
-            width: 100%;
-            height: auto;
-            position: relative;
-        }
-        &:after{
-            content: "";
-            display: block;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: g.$color-green;
-            .scroll-on &{
-                animation: scroll-lead 1s ease-in-out forwards;
-            }
-        }
-        img{
-            height: auto;
-            position: relative;
-            &:after{
-                content: "";
-                display: block;
-                width: 286px;
-                height: 286px;
-                background-color: g.$color-green;
-                position: absolute;
-                bottom: -20px;
-                left: -20px;
-            }
-        }
-    }
-}
-
-//▼事業内容
-.service{
-    padding-top: 323px;
-    @include g.wide-container{
-        padding-top: 32.3rem;
-    }
-    @include g.pc{
-        padding-top: 16rem;
-    }
-    @include g.tab{
-        padding-top: 8rem;
-    }
-    &__inner{
-        position: relative;
-        @include g.wide-container{
-            width: 81.25%;
-            margin: 0 auto;
-        }
-    }
     &__items{
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 60px 0;
+        flex-direction: row-reverse;
+        gap: 40px;
+        margin-right: 30px;
         @include g.pc{
-            margin-top: 6.4rem;
+            gap: 4rem;
+            margin-right: 3rem;
         }
         @include g.tab{
-            gap: 4rem 0;
-            margin-top: 4rem;
+            flex-direction: column;
+            align-items: center;
+            gap: 20rem;
+            margin-right: 0;
+            margin-top: 17.4rem;
         }
     }
-    &__title{
-        position: absolute;
-        transform: translateY(-45%);
-        left: -135px;
-        @include g.wide-container{
-            left: -13rem;
-        }
+    &__link{
+        margin-right: 80px;
+        margin-top: -300px;
         @include g.pc{
-            position: static;
-            transform: translateY(0%);
+            margin-right: 8rem;
+            margin-top: -30rem;
         }
-    }
-}
-
-//▼お知らせ
-.news{
-    margin-top: 160px;
-}
-#sbi_images{
-    margin-top: 54px;
-
-}
-.sbi_images{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 5px;
-    .sbi_item{
-        width: 258px;
-        height: 258px;
-        border: solid 5px g.$color-white;
-        background-color: g.$color-grey;
-    }
-}
-#sbi_load{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 10px;
-    .sbi_load_btn{
-        display: inline-block;
-        padding: 7px 14px;
-        background-color: g.$color-black;
-        color: g.$color-white;
-        @include g.font-style(13px, g.$color-white, bold, 1.5, 0);
-        border-radius: 4px;
-        text-align: center;
-        font-family: g.$sans;
-    }
-    .sbi_follow_btn{
-        display: inline-block;
-        padding: 7px 14px;
-        background-color: g.$color-blue;
-        color: g.$color-white;
-        @include g.font-style(13px, g.$color-white, bold, 1.5, 0);
-        border-radius: 4px;
-        text-align: center;
-        font-family: g.$sans;
-    }
-}
-
-//採用情報
-.recruit-sec{
-    width: 100%;
-    margin-top: 265px;
-    @include g.pc{
-        margin-top: 26.5rem;
-    }
-    &__bg{
-        width: 100%;
-        aspect-ratio: 3/1;
-        background-image: url("../images/recruit-sec-bg.webp");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        position: relative;
         @include g.tab{
-            aspect-ratio: 3/2;
+            display: none;
         }
-    }
-    &__inner{
-        width: 100%;
-        height: 100%;
-    }
-    &__title{
-        letter-spacing: 0.33em;
-        transform: translateY(-45%);
-        @include g.pc{
-            transform: translateY(-160%);
+        &-tab{
+            display: none;
+            @include g.tab{
+                display: block;
+                margin-top: 12rem;
+            }
+            
         }
-    }
-    &__body{
-        width: 1080px;
-        margin: -210px auto 0;
-        background-color: rgba(255,255,255,0.8);
-        padding: 72px 0 60px;
-        @include g.pc{
-            width: calc((1080 / 1300)*100%);
-            margin: -21rem auto 0;
-            padding: 7.2rem 2rem 6rem;
-        }
-        @include g.sp{
-            width: 91.1%;
-            margin: -10rem auto 0;
-            padding: 4rem 1.6rem;
-        }
-    }
-    &__text{
-        margin-top: 49px;
-        @include g.pc{
-            margin-top: 4.9rem;
-        }
-        @include g.sp{
-            margin-top: 4rem;
-        }
-    }
-    &__button{
-        margin: 75px auto 0;
-        @include g.pc{
-            margin: 7.5rem auto 0;
-        }
-        @include g.sp{
-            margin: 4rem auto 0;
-        }
-    }
-}
-
-//リンク
-.page-link{
-    margin-top: 120px;
-    &__inner{
-        border-top: solid 2px g.$color-green;
-        border-bottom: solid 2px g.$color-green;
     }
 }

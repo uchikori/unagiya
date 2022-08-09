@@ -1,66 +1,16 @@
 @use '../global' as g; 
 //h2タイトル
 .section__title{
-    @include g.font-style(40px, g.$color-dark, 900, 1, 0.09em);
-    text-align: center;
-    @include g.pc{
-        font-size: 4rem;
-    }
-    @include g.sp{
-        font-size: 2.8rem;
-    }
-    &_line_2{
-        @include g.font-style(40px, g.$color-dark, 900, 2, 0.09em);
+    &_size_s{
+        @include g.font-style(48px,g.$color-white, 500, 2, 0.1em);
+        white-space: nowrap;
+        font-feature-settings: "palt";
+        font-feature-settings: "pkna";
         @include g.pc{
-            font-size: 4rem;
+            font-size: 4.8rem;
         }
-        @include g.sp{
-            font-size: 2.8rem;
+        @include g.tab{
+            font-size: 8rem;
         }
-    }
-    &_text_vertical{
-        @include g.font-style(60px, g.$color-dark, 900, 1, 0.4em);
-        writing-mode: vertical-rl;
-        @include g.wide-container{
-            font-size: 6rem;
-        }
-        @include g.pc{
-            font-size: 4rem;
-            writing-mode: horizontal-tb;
-            text-align: center;
-        }
-        @include g.sp{
-            font-size: 2.8rem;
-        }
-        span{
-            margin-right: 17px;
-            @include g.wide-container{
-                margin-right: 1.7rem;
-            }
-            @include g.pc{
-                margin-right: 0;
-            }
-
-        }
-    }
-    &_lang_en{
-        @include g.font-style(16px, g.$color-green, 900, 1, 0em);
-        text-transform: uppercase;
-        font-family: g.$sans;
-        display: block;
-        margin-top: 22px;
-        @include g.wide-container{
-            margin-top: 2.2rem;
-        }
-    }
-}
-//h3タイトル
-.head3__title{
-    @include g.font-style(40px, g.$color-dark, 900, 1, 0.09em);
-    @include g.pc{
-        font-size: 4rem;
-    }
-    @include g.sp{
-        font-size: 2.8rem;
     }
 }

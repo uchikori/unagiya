@@ -2,10 +2,10 @@
 // レスポンシブ定義
 //-------------------------------
 $ultra: 1920px; //ウルトラワイドモニター
-$wide:  1600px; //ワイドコンテナー
-$pc:    1300px; // PC
-$s-pc:    1300px; // PC
-$tab:   768px;  // タブレット
+$wide:  1760px; //ワイドコンテナー
+$pc:    1232px; // PC
+$s-pc:  1024px; // PC
+$tab:   856px;  // タブレット
 $small: 560px;  //ワイドスマホ
 $sp:    428px;  // スマホ
 
@@ -58,18 +58,16 @@ $sp:    428px;  // スマホ
 //  font-family
 //-------------------------------
 $font:'Noto Serif JP', serif;
-$sans: 'Noto Sans JP', sans-serif;
+$sans: "Helvetica Neue" ,Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
 //-------------------------------
 //  color
 //-------------------------------
 $color-black:     #333333;
-$color-dark:      #575757;
+$color-black2:    #000000;
+$color-dark:      #cccccc;
 $color-white:     #ffffff;
-$color-grey:      #cccccc;
-$color-grey2:     #686868;
-$color-green:     #3A863F;
-$color-orange:    #EC6A06;
-$color-blue:      #408BD1;
+$color-gold:      #bf8c4e;
+$color-brown:     #591902;
 
 //-------------------------------
 //  font-style mixin
@@ -95,13 +93,10 @@ html{
     //---------------------------------------------------
     font-size: calc(10 / 1920 * 100) + vw;
     @include pc{
-        font-size: calc(10 / 1300 * 100) + vw;
+        font-size: calc(10 / 1232 * 100) + vw;
     }
     @include tab{
-        font-size: calc(10 / 768 * 100) + vw;
-    }
-    @include sp{
-        font-size: calc(10 / 428 * 100) + vw;
+        font-size: calc(10 / 856 * 100) + vw;
     }
 }
 body{

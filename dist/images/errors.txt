@@ -1,0 +1,7 @@
+[2022/8/9 13:57:07] layer "現金 クレジットカード（VISA,Master,JCB） 電子マネー（PayPay,,,,,,,,,,,,）": Expected end of input but "," found.
+[2022/8/9 13:57:07] layer "Arrow - www.Shapes4FREE.com 1": Expected end of input but "1" found.
+[2022/8/9 13:57:07] layer "Arrow - www.Shapes4FREE.com 1": Expected end of input but "1" found.
+[2022/8/9 13:57:07] layer "Arrow - www.Shapes4FREE.com 1": Expected end of input but "1" found.
+[2022/8/9 13:57:07] layer "Arrow - www.Shapes4FREE.com 1": Expected end of input but "1" found.
+[2022/8/9 13:57:07] layer "Arrow - www.Shapes4FREE.com 1": Expected end of input but "1" found.
+[2022/8/9 13:57:07] layer "Arrow - www.Shapes4FREE.com 1": Expected end of input but "1" found.
