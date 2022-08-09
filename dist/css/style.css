@@ -274,7 +274,7 @@ a[href^="tel:"] {
   font-size: 57.6px;
   font-size: 3.6rem;
   color: #591902;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1;
   letter-spacing: 0.02em;
   display: -webkit-box;
@@ -317,7 +317,7 @@ a[href^="tel:"] {
 .tategaki-button a {
   font-size: 20px;
   color: #ffffff;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1;
   letter-spacing: 0.1em;
   padding: 50px 25px;
@@ -437,7 +437,7 @@ a[href^="tel:"] {
 .tategaki-comp__title {
   font-size: 32px;
   color: #ffffff;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1;
   letter-spacing: 0.1em;
   position: relative;
@@ -466,7 +466,7 @@ a[href^="tel:"] {
 .tategaki-comp__text-box {
   font-size: 16px;
   color: #ffffff;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 2;
   letter-spacing: 0.1em;
   max-height: 520px;

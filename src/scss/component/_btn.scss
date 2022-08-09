@@ -3,7 +3,7 @@
 .button-tab{
     a{
         width: 100%;
-        @include  g.font-style(3.6rem, g.$color-brown, 500, 1, 0.02em);
+        @include  g.font-style(3.6rem, g.$color-brown, 600, 1, 0.02em);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -31,7 +31,7 @@
 }
 .tategaki-button{
     a{
-        @include  g.font-style(20px, g.$color-white, 500, 1, 0.1em);
+        @include  g.font-style(20px, g.$color-white, 600, 1, 0.1em);
         padding: 50px 25px;
         background-color: transparent;
         border: solid 2px g.$color-white;

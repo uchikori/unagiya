@@ -1,7 +1,7 @@
 @use '../global' as g;
 .tategaki-comp{
     &__title{
-        @include g.font-style(32px, g.$color-white, 500, 1, 0.1em);
+        @include g.font-style(32px, g.$color-white, 600, 1, 0.1em);
         position: relative;
         white-space: nowrap;
         font-feature-settings: "palt";
@@ -32,7 +32,7 @@
         }
     }
     &__text-box{
-        @include g.font-style(16px, g.$color-white, 500, 2, 0.1em);
+        @include g.font-style(16px, g.$color-white, 600, 2, 0.1em);
         max-height: 520px;
         margin-right: 24px;
         @include g.pc{

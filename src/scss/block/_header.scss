@@ -85,7 +85,7 @@
     }
     .nav-link{
         width: 100%;
-        @include g.font-style(20px, g.$color-black, 500, 1, 0.02em);
+        @include g.font-style(20px, g.$color-black, 600, 1, 0.02em);
         display: block;
         writing-mode: inherit;
         transition: color 0.3s ease;
