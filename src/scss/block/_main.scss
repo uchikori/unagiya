@@ -7,7 +7,7 @@
         width: 94%;
     }
     @include g.tab{
-        width: 91.1%;
+        width: calc(792/856)*100%;
     }
 }
 .wide-container{

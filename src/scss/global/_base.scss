@@ -102,6 +102,10 @@ html{
 body{
     overflow-x: hidden;
     font-family: $font;
+    background-image: url("../images/bg@2x.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     &.fixed{
       position: fixed;
       top: 0;

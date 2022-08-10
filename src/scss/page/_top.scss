@@ -1,4 +1,5 @@
 @use '../global' as g;
+//3つの幸せ
 .happiness{
     width: 100%;
     padding: 91px 0 57px;
@@ -61,6 +62,206 @@
                 margin-top: 12rem;
             }
             
+        }
+    }
+}
+.tategaki-comp{
+    &__title{
+        @include g.font-style(32px, g.$color-white, 600, 1, 0.1em);
+        position: relative;
+        white-space: nowrap;
+        font-feature-settings: "palt";
+        font-feature-settings: "pkna";
+        @include g.pc{
+            font-size: 3.2rem;
+        }
+        @include g.tab{
+            font-size: 7.2rem;
+        }
+        span{
+            display: inline-block;
+            width: 84px;
+            aspect-ratio: 1/1;
+            position: absolute;
+            bottom: 101%;
+            left: 50%;
+            transform: translateX(-50%);
+            @include g.pc{
+                width: 8.4rem;
+            }
+            @include g.tab{
+                width: 19rem;
+            }
+            img{
+                height: auto;
+            }
+        }
+    }
+    &__text-box{
+        @include g.font-style(16px, g.$color-white, 600, 2, 0.1em);
+        height: 520px;
+        margin-right: 24px;
+        @include g.pc{
+            font-size: 1.6rem;
+            height: 52rem;
+            margin-right: 2.4rem;
+        }
+        @include g.tab{
+            font-size: 3.6rem;
+            height: 117.7rem;
+            margin-right: 5.4rem;
+        }
+    }
+}
+//お知らせ
+.news-sec{
+    margin-top: 198px;
+    @include g.pc{
+        margin-top: 19.8rem;
+    }
+    &__inner{
+        display: flex;
+        @include g.tab{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__title{
+        position: relative;
+        span{
+            display: block;
+            width: 366px;
+            aspect-ratio: 366/382; 
+            position: absolute;
+            top: -31%;
+            left: -210%;
+            @include g.pc{
+                width: 36.6rem;
+            }
+            @include g.tab{
+                top: -160%;
+                left: -47%;
+            }
+            img{
+                height: auto;
+            }
+        }
+    }
+    &__items{
+        width: calc(920/1232)*100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 120px;
+        @include g.pc{
+            margin-left: 12rem;
+        }
+        @include g.tab{
+            width: 100%;
+            margin-left: 0;
+            margin-top: 8rem;
+        }
+    }
+}
+.news-item{
+    border-top: solid 1px g.$color-dark;
+    background-color:transparent;
+    transition: background-color 0.3s ease;
+    &:hover{
+        background-color: rgba(191, 140, 78, 0.1);
+        transition: background-color 0.3s ease;
+    }
+    &:last-child{
+        border-bottom: solid 1px g.$color-dark;
+    }
+    a{
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include g.tab{
+            padding: 3.4rem 0 4.6rem;
+        }
+    }
+    &__body{
+        font-feature-settings: "palt";
+        @include g.tab{
+            max-width: calc(750/792)*100%;
+        }
+    }
+    &__time{
+       @include g.font-style(16px, g.$color-black, 500, 1, 0);
+        @include g.tab{
+            font-size: 3.2rem;
+            line-height: 1;
+            font-weight: 600;
+        }
+    }
+    &__title{
+        @include g.font-style(16px, g.$color-black, 500, 1, 0);
+        margin-top: 19px;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        @include g.tab{
+            -webkit-line-clamp: 2;
+            font-size: 3.2rem;
+            line-height: 1.5;
+            margin-top: 3.8rem;
+            font-weight: 600;
+        }
+    }
+    &__arrow{
+        display: block;
+        width: 12px;
+        aspect-ratio: 1/2;
+        img{
+            height: auto;
+        }
+    }
+}
+//お品書き
+.menu-sec{
+    margin-top: 200px;
+    &__top{
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        span{
+            display: block;
+            width: 694px;
+            aspect-ratio: 694/444;
+            position: absolute;
+            top: 0;
+            left: -20%;
+            @include g.pc{
+                width: 69.4rem;
+            }
+            img{
+                height: auto;
+            }
+        }
+    }
+    &__menu-list{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 24px;
+        margin-right: 120px;
+    }
+    &__menu-item{
+        a{
+            @include g.font-style(20px, g.$color-black, 600, 1, 0.02em);
+            writing-mode: vertical-rl;
+            display: block;
+            padding: 10px 6px;
+            background-color: g.$color-white;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            &:hover{
+                color: g.$color-white;
+                background-color: g.$color-gold;
+                transition: all 0.3s ease;
+            }
         }
     }
 }

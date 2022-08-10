@@ -21,9 +21,6 @@ function loading(){
     jQuery(".splash").delay(1700).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
     jQuery(".splash__logo").delay(1300).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
   }
-  // jQuery(window).on('load',function(){
-    
-  // });
 }
 
 /**
@@ -52,6 +49,25 @@ switchImage = function(next){
     setTimeout(switchImage.bind(this, next), duration);
 };
 window.onload = switchImage.bind(this, defaultIndex);
+
+/**
+ * アンカーリンクスクロールアニメーション
+ */
+function anchor(){
+  jQuery('.js-anchor').click(function(){
+    //スクロールのスピード
+    var speed = 500;
+    //リンク元を取得
+    var href= jQuery(this).attr("href");
+    //リンク先を取得
+    var target = jQuery(href == "#" || href == "" ? 'html' : href);
+    //リンク先までの距離を取得
+    var position = target.offset().top;
+    //スムーススクロール
+    jQuery("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+}
 /**
  * スクロールアニメーション
  */

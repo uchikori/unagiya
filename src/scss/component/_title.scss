@@ -13,4 +13,74 @@
             font-size: 8rem;
         }
     }
+    &_belt_lr{
+        @include g.font-style(60px,g.$color-white, 500, 1, 0.1em);
+        background-color: g.$color-brown;
+        white-space: nowrap;
+        font-feature-settings: "palt";
+        font-feature-settings: "pkna";
+        padding: 31px 14px;
+        position: relative;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        @include g.pc{
+            font-size: 6rem;
+            padding: 3.1rem 1.4rem;
+        }
+        @include g.tab{
+            font-size: 7.2rem;
+            padding: 1.8rem 3.6rem;
+            writing-mode: horizontal-tb;
+        }
+        &:before{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: transparent;
+            border: solid 1px g.$color-gold;
+            z-index: -1;
+            @include g.tab{
+                display: none;
+            }
+        }
+    }
+    &_belt_rl{
+        @include g.font-style(60px,g.$color-white, 500, 1, 0.1em);
+        background-color: g.$color-brown;
+        white-space: nowrap;
+        font-feature-settings: "palt";
+        font-feature-settings: "pkna";
+        padding: 31px 14px;
+        position: relative;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        @include g.pc{
+            font-size: 6rem;
+            padding: 3.1rem 1.4rem;
+        }
+        @include g.tab{
+            font-size: 7.2rem;
+            padding: 1.8rem 3.6rem;
+            writing-mode: horizontal-tb;
+        }
+        &:before{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: transparent;
+            border: solid 1px g.$color-gold;
+            z-index: -1;
+            @include g.tab{
+                display: none;
+            }
+        }
+    }
 }

@@ -6,6 +6,10 @@ html {
 body {
   overflow-x: hidden;
   font-family: "Noto Serif JP", serif;
+  background-image: url("../images/bg@2x.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 body.fixed {
