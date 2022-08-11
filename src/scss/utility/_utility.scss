@@ -13,7 +13,6 @@
 //テキストボックス
 p.text-box{
     @include g.font-style(16px, g.$color-black, 500, 2, 0);
-    font-family: g.$sans;
     @include g.pc{
         font-size: 1.6rem;
     }

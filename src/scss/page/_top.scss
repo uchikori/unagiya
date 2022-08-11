@@ -223,10 +223,21 @@
 //お品書き
 .menu-sec{
     margin-top: 200px;
+    overflow-x: hidden;
+    @include g.pc{
+        margin-top: 20rem;
+    }
+    @include g.tab{
+        margin-top: 18.8rem;
+    }
     &__top{
         display: flex;
         flex-direction: row-reverse;
         position: relative;
+        @include g.tab{
+            flex-direction: column;
+            align-items: flex-start;
+        }
         span{
             display: block;
             width: 694px;
@@ -236,6 +247,10 @@
             left: -20%;
             @include g.pc{
                 width: 69.4rem;
+            }
+            @include g.tab{
+                top: 13%;
+                left: 45.3%;
             }
             img{
                 height: auto;
@@ -247,6 +262,17 @@
         flex-direction: row-reverse;
         gap: 24px;
         margin-right: 120px;
+        @include g.pc{
+            gap: 2.4rem;
+            margin-right: 12rem;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        @include g.tab{
+            gap: 3rem;
+            margin-right: 0;
+            margin-top: 6.8rem;
+        }
     }
     &__menu-item{
         a{
@@ -257,11 +283,128 @@
             background-color: g.$color-white;
             box-shadow: 0 3px 6px rgba(0,0,0,0.2);
             transition: all 0.3s ease;
+            @include g.pc{
+                font-size: 2rem;
+                padding: 1rem 0.6rem;
+            }
+            @include g.tab{
+                font-size: 4rem;
+                padding: 1.1rem 2.1rem;
+                writing-mode: horizontal-tb;
+            }
             &:hover{
                 color: g.$color-white;
                 background-color: g.$color-gold;
                 transition: all 0.3s ease;
             }
+        }
+    }
+    &__items{
+        margin-top: 120px;
+        position: relative;
+        @include g.pc{
+            margin-top: 12rem;
+        }
+    }
+    &__bg{
+        display: block;
+        width: 686px;
+        aspect-ratio: 686/921;
+        position: absolute;
+        top: 8%;
+        right: -28%;
+    }
+}
+.menu-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    @include g.pc{
+        margin-top: 10rem;
+    }
+    @include g.tab{
+        margin-top: 12rem;
+        flex-direction: column;
+    }
+    &:first-child{
+        margin-top: 0;
+    }
+    &__image{
+        width: calc(712/1232)*100%;
+        aspect-ratio: 712/480;
+        overflow: hidden;
+        width: 100%;
+        img{
+            height: auto;
+        }
+    }
+    &__body{
+        width: calc(505/1232)*100%;
+        @include g.tab{
+            width: 100%;
+            margin-top: 4rem;
+        }
+    }
+    &__title{
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+        border-top: solid 1px g.$color-brown;
+        border-bottom: solid 1px g.$color-brown;
+        @include g.pc{
+            padding: 1.6rem;
+        }
+        @include g.tab{
+            padding: 2rem;
+        }
+    }
+    &__name{
+        @include g.font-style(32px, g.$color-black, 600, 1, 0.02em);
+        @include g.pc{
+            font-size: 3.2rem;
+        }
+        @include g.tab{
+            font-size: 4rem;
+        }
+    }
+    &__price{
+        @include g.font-style(32px, g.$color-black, 600, 1, 0.02em);
+        @include g.pc{
+            font-size: 3.2rem;
+        }
+        @include g.tab{
+            font-size: 4rem;
+        }
+        span{
+            @include g.font-style(24px, g.$color-black, 600, 1, 0.02em);
+            @include g.pc{
+                font-size: 2.4rem;
+            }
+        }
+    }
+    &__text{
+        @include g.font-style(16px, g.$color-black, 600, 2, 0.02em);
+        margin-top: 18px;
+        @include g.pc{
+            font-size: 1.6rem;
+            margin-top: 1.8rem;
+        }
+        @include g.tab{
+            margin-top: 4rem;
+            font-size: 3.2rem;
+        }
+    }
+    &__rank{
+        @include g.font-style(20px, g.$color-black, 600, 2, 0.02em);
+        margin-top: 20px;
+        @include g.pc{
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+        @include g.tab{
+            font-size: 3.2rem;
+            margin-top: 4rem;
         }
     }
 }

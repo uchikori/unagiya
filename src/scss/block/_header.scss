@@ -60,12 +60,11 @@
         top: 183%;
         right: 3.8%;
     }
-    .menu{
+    &__items{
         display: flex;
         -webkit-box-orient: horizontal;
         align-items: flex-start;
         gap: 24px;
-        
         @include g.pc{
             gap: 2.4rem;
         }
@@ -74,20 +73,17 @@
 
         }
     }
-    .menu-item{
-        width: 32px;
-        max-height: 600px;
-        display: block;
-        writing-mode: vertical-lr;
+    &__item{
+        width: 32px; 
         @include g.tab{
             width: 6.1rem;
         }
     }
-    .nav-link{
+    &__link{
         width: 100%;
         @include g.font-style(20px, g.$color-black, 600, 1, 0.02em);
         display: block;
-        writing-mode: inherit;
+        writing-mode: vertical-lr;
         transition: color 0.3s ease;
         padding: 8px 6px;
         background-color: g.$color-white;
@@ -179,6 +175,7 @@
         }
         @include g.tab{
             width: 10rem;
+            transform: translateY(10%);
         }
         img{
             filter: drop-shadow(0 0 3.2rem rgba(0, 0, 0, 1));

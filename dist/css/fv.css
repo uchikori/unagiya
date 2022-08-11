@@ -694,7 +694,6 @@ p.text-box {
   font-weight: 500;
   line-height: 2;
   letter-spacing: 0;
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 .align-left {
@@ -830,7 +829,7 @@ p.text-box {
   gap: 60px;
 }
 
-.gloval-navi .menu {
+.gloval-navi__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -841,16 +840,11 @@ p.text-box {
   gap: 24px;
 }
 
-.gloval-navi .menu-item {
+.gloval-navi__item {
   width: 32px;
-  max-height: 600px;
-  display: block;
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
 }
 
-.gloval-navi .nav-link {
+.gloval-navi__link {
   width: 100%;
   font-size: 20px;
   color: #333333;
@@ -858,9 +852,9 @@ p.text-box {
   line-height: 1;
   letter-spacing: 0.02em;
   display: block;
-  -webkit-writing-mode: inherit;
-      -ms-writing-mode: inherit;
-          writing-mode: inherit;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
   padding: 8px 6px;
@@ -871,14 +865,14 @@ p.text-box {
           font-feature-settings: "pkna";
 }
 
-.gloval-navi .nav-link:hover {
+.gloval-navi__link:hover {
   background-color: #bf8c4e;
   color: #ffffff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.gloval-navi .nav-link.current {
+.gloval-navi__link.current {
   color: #bf8c4e;
 }
 
@@ -989,11 +983,11 @@ p.text-box {
     gap: 4rem;
   }
 
-  .gloval-navi .menu {
+  .gloval-navi__items {
     gap: 2.4rem;
   }
 
-  .gloval-navi .nav-link {
+  .gloval-navi__link {
     font-size: 2rem;
     padding: 1rem 0.8rem;
   }
@@ -1040,15 +1034,15 @@ p.text-box {
     right: 3.8%;
   }
 
-  .gloval-navi .menu {
+  .gloval-navi__items {
     gap: 4.6rem;
   }
 
-  .gloval-navi .menu-item {
+  .gloval-navi__item {
     width: 6.1rem;
   }
 
-  .gloval-navi .nav-link {
+  .gloval-navi__link {
     font-size: 3.8rem;
     padding: 1.4rem 1rem;
   }
@@ -1060,6 +1054,8 @@ p.text-box {
 
   .main-visual__copy {
     width: 10rem;
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
   }
 }
 

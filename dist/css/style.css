@@ -419,6 +419,7 @@ a[href^="tel:"] {
 
 .menu-sec {
   margin-top: 200px;
+  overflow-x: hidden;
 }
 
 .menu-sec__top {
@@ -480,6 +481,104 @@ a[href^="tel:"] {
   background-color: #bf8c4e;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.menu-sec__items {
+  margin-top: 120px;
+  position: relative;
+}
+
+.menu-sec__bg {
+  display: block;
+  width: 686px;
+  aspect-ratio: 686/921;
+  position: absolute;
+  top: 8%;
+  right: -28%;
+}
+
+.menu-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 100px;
+}
+
+.menu-item:first-child {
+  margin-top: 0;
+}
+
+.menu-item__image {
+  width: 57.7922077922%;
+  aspect-ratio: 712/480;
+  overflow: hidden;
+  width: 100%;
+}
+
+.menu-item__image img {
+  height: auto;
+}
+
+.menu-item__body {
+  width: 40.9902597403%;
+}
+
+.menu-item__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px;
+  border-top: solid 1px #591902;
+  border-bottom: solid 1px #591902;
+}
+
+.menu-item__name {
+  font-size: 32px;
+  color: #333333;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.menu-item__price {
+  font-size: 32px;
+  color: #333333;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.menu-item__price span {
+  font-size: 24px;
+  color: #333333;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.menu-item__text {
+  font-size: 16px;
+  color: #333333;
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: 0.02em;
+  margin-top: 18px;
+}
+
+.menu-item__rank {
+  font-size: 20px;
+  color: #333333;
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: 0.02em;
+  margin-top: 20px;
 }
 
 .button-tab a {
@@ -778,8 +877,63 @@ a[href^="tel:"] {
     margin-left: 12rem;
   }
 
+  .menu-sec {
+    margin-top: 20rem;
+  }
+
   .menu-sec__top span {
     width: 69.4rem;
+  }
+
+  .menu-sec__menu-list {
+    gap: 2.4rem;
+    margin-right: 12rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .menu-sec__menu-item a {
+    font-size: 2rem;
+    padding: 1rem 0.6rem;
+  }
+
+  .menu-sec__items {
+    margin-top: 12rem;
+  }
+
+  .menu-item {
+    margin-top: 10rem;
+  }
+
+  .menu-item__title {
+    padding: 1.6rem;
+  }
+
+  .menu-item__name {
+    font-size: 3.2rem;
+  }
+
+  .menu-item__price {
+    font-size: 3.2rem;
+  }
+
+  .menu-item__price span {
+    font-size: 2.4rem;
+  }
+
+  .menu-item__text {
+    font-size: 1.6rem;
+    margin-top: 1.8rem;
+  }
+
+  .menu-item__rank {
+    font-size: 2rem;
+    margin-top: 2rem;
   }
 
   .tategaki-button a {
@@ -900,6 +1054,74 @@ a[href^="tel:"] {
     line-height: 1.5;
     margin-top: 3.8rem;
     font-weight: 600;
+  }
+
+  .menu-sec {
+    margin-top: 18.8rem;
+  }
+
+  .menu-sec__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .menu-sec__top span {
+    top: 13%;
+    left: 45.3%;
+  }
+
+  .menu-sec__menu-list {
+    gap: 3rem;
+    margin-right: 0;
+    margin-top: 6.8rem;
+  }
+
+  .menu-sec__menu-item a {
+    font-size: 4rem;
+    padding: 1.1rem 2.1rem;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+  }
+
+  .menu-item {
+    margin-top: 12rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .menu-item__body {
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  .menu-item__title {
+    padding: 2rem;
+  }
+
+  .menu-item__name {
+    font-size: 4rem;
+  }
+
+  .menu-item__price {
+    font-size: 4rem;
+  }
+
+  .menu-item__text {
+    margin-top: 4rem;
+    font-size: 3.2rem;
+  }
+
+  .menu-item__rank {
+    font-size: 3.2rem;
+    margin-top: 4rem;
   }
 
   .section__title_size_s {
