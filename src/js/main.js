@@ -107,7 +107,7 @@ function swiper(){
       clickable: true
     },
     breakpoints:{
-      856:{
+      857:{
         slidesPerView: 4,
       },
     },

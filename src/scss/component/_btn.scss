@@ -52,13 +52,24 @@
         @include g.font-style(16px, g.$color-black, 600, 1, 0.1em);
         display: flex;
         align-items: center;
+        transition: color 0.3s ease;
         @include g.tab{
             font-size: 2.8rem;
+        }
+        &:hover{
+            color: g.$color-gold;
+            transition: color 0.3s ease;
+            span{
+                transform: translateX(50%);
+                transition: transform 0.3s ease;
+            }
         }
         span{
             width: 12px;
             aspect-ratio: 1/2;
             margin-left: 41px;
+            transform: translateX(0%);
+            transition: transform 0.3s ease;
             @include g.tab{
                 margin-left: 2.8rem;
             }

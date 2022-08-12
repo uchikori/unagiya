@@ -799,12 +799,35 @@ p.text-box {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.clear-button a:hover {
+  color: #bf8c4e;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.clear-button a:hover span {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .clear-button a span {
   width: 12px;
   aspect-ratio: 1/2;
   margin-left: 41px;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .clear-button a span img {

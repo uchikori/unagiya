@@ -420,8 +420,26 @@
 //コラム
 .column-sec{
     margin-top: 196px;
+    position: relative;
     @include g.pc{
         margin-top: 19.6rem;
+    }
+    &__bg{
+        position: absolute;
+        top: -59%;
+        left: 0%;
+        display: block;
+        width: 534px;
+        aspect-ratio: 534/802;
+        @include g.pc{
+            width: 53.4rem;
+        }
+        @include g.tab{
+            display: none;
+        }
+        img{
+            height: auto;
+        }
     }
     &__top{
         display: flex;

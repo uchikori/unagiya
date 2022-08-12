@@ -55,7 +55,7 @@
                             <a href="/column.html" class="gloval-navi__link">うなぎコラム</a>
                         </li>
                         <li class="gloval-navi__item">
-                            <a href="/#access" class="gloval-navi__link js-anchor">アクセス</a>
+                            <a href="#access" class="gloval-navi__link js-anchor">アクセス</a>
                         </li>
                     </ul>
                 </nav>
@@ -324,6 +324,7 @@
 
          <!-- ▼コラム -->
          <section class="column-sec">
+            <span class="column-sec__bg"><img src="dist/images/column-bg@2x.webp" width="534" height="802" alt=""></span>
             <div class="column-sec__inner container">
                 <div class="column-sec__top">
                     <div class="column-sec__title">
@@ -421,13 +422,11 @@
                                 </a>
                             </li>
                         </ul>
-
                     </div>
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
-
             </div>
          </section>
          <!-- ▲コラム -->
@@ -435,7 +434,61 @@
 
     <!-- ▼フッター -->
     <footer class="footer">
-       
+        <div id="access" class="access footer__top">
+            <div class="access__right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.195047221191!2d139.6276526157099!3d35.449965380249026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c6080366139%3A0xcb30693627aa9db5!2z44CSMjMxLTAwNjMg56We5aWI5bed55yM5qiq5rWc5biC5Lit5Yy66Iqx5ZKy55S677yS5LiB55uu77yW77yU4oiS77yW!5e0!3m2!1sja!2sjp!4v1660283637621!5m2!1sja!2sjp" width="960" height="642" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="access__left">
+                <div class="shop-info">
+                    <h2 class="shop-info__title">店舗情報</h2>
+                    <table class="shop-info__data">
+                        <tbody>
+                            <tr>
+                                <th>店名</th>
+                                <td>鰻の成瀬</td>
+                            </tr>
+                            <tr>
+                                <th>住所</th>
+                                <td>
+                                    〒231-0063<br>
+                                    神奈川県横浜市中区花咲町2-64-6<br>
+                                    クリーンビル1F
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>電話番号</th>
+                                <td>012-345-6789</td>
+                            </tr>
+                            <tr>
+                                <th>営業時間</th>
+                                <td>11:30～13:30</td>
+                            </tr>
+                            <tr>
+                                <th>定休日</th>
+                                <td>火曜日</td>
+                            </tr>
+                            <tr>
+                                <th>お支払い</th>
+                                <td>
+                                    現金<br>
+                                    クレジットカード（VISA,Master,JCB）<br>
+                                    電子マネー（PayPay,,,,,,,,,,,,）
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>座席</th>
+                                <td>カウンター席 13席</td>
+                            </tr>
+                            <tr>
+                                <th>駐車場</th>
+                                <td>無し</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom"></div>
     </footer>
     <!-- ▲フッター -->
 
@@ -443,6 +496,6 @@
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js"></script>
-<script defer src="dist/js/main.js"></script>
+<script defer src="dist/js/main.min.js"></script>
 </body>
 </html>
