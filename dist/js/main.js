@@ -2,12 +2,10 @@
 
 jQuery(document).ready(function () {
   loading();
-  addHeaderClass();
-  onscrollHeadFollow();
-  menuOpen();
-  resClassRemove();
   indicator();
+  anchor();
   scrollAnimation();
+  swiper();
 });
 /**
  * ローディングアニメーション
@@ -100,5 +98,35 @@ function scrollAnimation() {
         }
       }
     });
+  });
+}
+/**
+ * スライダーアニメーション
+ */
+
+
+function swiper() {
+  var mySwiper = new Swiper('.swiper-container', {
+    autoplay: {
+      delay: 5000
+    },
+    spaceBetween: 16,
+    loop: true,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    initialSlide: 0,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      856: {
+        slidesPerView: 4
+      }
+    }
   });
 }

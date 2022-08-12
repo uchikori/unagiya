@@ -22,6 +22,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- ファーストビュー読み込み -->
     <link rel="stylesheet" href="dist/css/fv.css">
+    <!-- Swiperスタイル遅延読み込み -->        
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.css" as="style" onload="this.onload=null;this.rel='stylesheet'" >
     <!-- メインスタイル遅延読み込み -->        
     <link rel="preload" href="dist/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" >
 </head>
@@ -249,7 +251,7 @@
                 </div>
                 <ul class="menu-sec__items">
                     <span class="menu-sec__bg"><img src="dist/images/menu-items-bg.svg" alt=""></span>
-                    <li class="menu-item">
+                    <li id="menu01" class="menu-item">
                         <picture class="menu-item__image">
                             <source media="(min-width: 769px)" type="image/webp" srcset="dist/images/menu-item.webp, dist/images/menu-item@2x.webp 2x"> 
                             <source media="(min-width: 769px)" type="image/jpeg" srcset="dist/images/menu-item.jpg, dist/images/menu-item@2x.jpg 2x">
@@ -263,7 +265,7 @@
                                 <div class="menu-item__price">1,600<span>円</span></div>
                             </div>
                             
-                            <p class="menu-item__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                            <p class="menu-item__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。。ここにテキストが入ります。</p>
                             <p class="menu-item__rank">
                                 ■うな重　並　1,600円<br>
                                 ■うな重　上　2,200円<br>
@@ -271,7 +273,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="menu-item">
+                    <li id="menu02" class="menu-item">
                         <picture class="menu-item__image">
                             <source media="(min-width: 769px)" type="image/webp" srcset="dist/images/menu-item02.webp, dist/images/menu-item02@2x.webp 2x"> 
                             <source media="(min-width: 769px)" type="image/jpeg" srcset="dist/images/menu-item02.jpg, dist/images/menu-item02@2x.jpg 2x">
@@ -293,7 +295,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="menu-item">
+                    <li id="menu03" class="menu-item">
                         <picture class="menu-item__image">
                             <source media="(min-width: 769px)" type="image/webp" srcset="dist/images/menu-item03.webp, dist/images/menu-item03@2x.webp 2x"> 
                             <source media="(min-width: 769px)" type="image/jpeg" srcset="dist/images/menu-item03.jpg, dist/images/menu-item03@2x.jpg 2x">
@@ -319,6 +321,116 @@
             </div>
          </section>
          <!-- ▲お品書き -->
+
+         <!-- ▼コラム -->
+         <section class="column-sec">
+            <div class="column-sec__inner container">
+                <div class="column-sec__top">
+                    <div class="column-sec__title">
+                        <h2 class="section__title_border_bottom">うなぎコラム</h2>
+                    </div>
+                    <div class="clear-button">
+                        <a href="/column.html">過去の記事一覧<span><img src="dist/images/Arrow023-black.svg" alt=""></span></a>
+                    </div>
+                </div>
+                <div class="column-sec__slider">
+                    <div class="swiper-container column-sec__slider">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide card01">
+                                <a href="/single.html">
+                                    <figure class="card01__image"></figure>
+                                    <div class="card01__body">
+                                        <div class="card01__meta">
+                                            <time class="card01__time" datetime="2022-08-09">2022.08.09</time>
+                                            <span class="card01__cat">コラム</span>
+                                        </div>
+                                        <h3 class="card01__title">
+                                            ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide card01">
+                                <a href="/single.html">
+                                    <figure class="card01__image"></figure>
+                                    <div class="card01__body">
+                                        <div class="card01__meta">
+                                            <time class="card01__time" datetime="2022-08-09">2022.08.09</time>
+                                            <span class="card01__cat">コラム</span>
+                                        </div>
+                                        <h3 class="card01__title">
+                                            ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide card01">
+                                <a href="/single.html">
+                                    <figure class="card01__image"></figure>
+                                    <div class="card01__body">
+                                        <div class="card01__meta">
+                                            <time class="card01__time" datetime="2022-08-09">2022.08.09</time>
+                                            <span class="card01__cat">コラム</span>
+                                        </div>
+                                        <h3 class="card01__title">
+                                            ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide card01">
+                                <a href="/single.html">
+                                    <figure class="card01__image"></figure>
+                                    <div class="card01__body">
+                                        <div class="card01__meta">
+                                            <time class="card01__time" datetime="2022-08-09">2022.08.09</time>
+                                            <span class="card01__cat">コラム</span>
+                                        </div>
+                                        <h3 class="card01__title">
+                                            ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide card01">
+                                <a href="/single.html">
+                                    <figure class="card01__image"></figure>
+                                    <div class="card01__body">
+                                        <div class="card01__meta">
+                                            <time class="card01__time" datetime="2022-08-09">2022.08.09</time>
+                                            <span class="card01__cat">コラム</span>
+                                        </div>
+                                        <h3 class="card01__title">
+                                            ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide card01">
+                                <a href="/single.html">
+                                    <figure class="card01__image"></figure>
+                                    <div class="card01__body">
+                                        <div class="card01__meta">
+                                            <time class="card01__time" datetime="2022-08-09">2022.08.09</time>
+                                            <span class="card01__cat">コラム</span>
+                                        </div>
+                                        <h3 class="card01__title">
+                                            ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+            </div>
+         </section>
+         <!-- ▲コラム -->
     </main>
 
     <!-- ▼フッター -->
@@ -330,6 +442,7 @@
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-<script defer src="dist/js/main.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js"></script>
+<script defer src="dist/js/main.js"></script>
 </body>
 </html>

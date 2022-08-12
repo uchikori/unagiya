@@ -83,4 +83,13 @@
             }
         }
     }
+    &_border_bottom{
+        @include g.font-style(60px, g.$color-brown, 600, 1, 0.02em);
+        @include g.pc{
+            font-size: 6rem;
+        }
+        @include g.tab{
+            font-size: 7.2rem;
+        }
+    }
 }

@@ -787,6 +787,30 @@ p.text-box {
   transition: all 0.3s ease;
 }
 
+.clear-button a {
+  font-size: 16px;
+  color: #333333;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clear-button a span {
+  width: 12px;
+  aspect-ratio: 1/2;
+  margin-left: 41px;
+}
+
+.clear-button a span img {
+  height: auto;
+}
+
 .header {
   width: 100%;
   position: absolute;
@@ -1012,6 +1036,14 @@ p.text-box {
 
   .tab {
     display: block;
+  }
+
+  .clear-button a {
+    font-size: 2.8rem;
+  }
+
+  .clear-button a span {
+    margin-left: 2.8rem;
   }
 
   .header__inner {

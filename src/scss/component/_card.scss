@@ -1,2 +1,108 @@
 @use '../global' as g; 
 //カードブロック
+.card01{
+    display: block;
+    width: calc((100% - 48px)/4);
+    @include g.pc{
+        width: calc((100% - 4.8rem)/4);
+    }
+    @include g.tab{
+        width: 100%;
+    }
+    a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        filter: brightness(100%);
+        transition: filter 0.3s ease;
+        &:hover{
+            filter: brightness(110%);
+            transition: filter 0.3s ease;
+        }
+    }
+    &__image{
+        width: 100%;
+        aspect-ratio: 296/200;
+        overflow: hidden;
+        background-color: g.$color-black;
+        img{
+            height: auto;
+        }
+    }
+    &__body{
+        padding: 10px 10px 40px;
+        background-color: g.$color-white;
+        position: relative;
+        @include g.pc{
+            padding: 1rem 1rem 4rem;
+        }
+        @include g.tab{
+            padding: 3.2rem 1.8rem 8.4rem;
+        }
+        &:after{
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-left: solid 24px transparent;
+            border-bottom: solid 24px g.$color-gold;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            @include g.pc{
+                border-left: solid 2.4rem transparent;
+                border-bottom: solid 2.4rem g.$color-gold;
+            }
+            @include g.tab{
+                border-left: solid 6.4rem transparent;
+                border-bottom: solid 6.4rem g.$color-gold;
+            }
+        }
+    }
+    &__meta{
+        display: flex;
+        align-items: center;
+    }
+    &__time{
+        @include g.font-style(12px, g.$color-black, 600, 1, 0);
+        margin-right: 20px;
+        @include g.pc{
+            font-size: 1.2rem;
+            margin-right: 2rem;
+        }
+        @include g.tab{
+            font-size: 3.2rem;
+            margin-right: 6rem;
+        }
+    }
+    &__cat{
+        @include g.font-style(12px, g.$color-white, 600, 1, 0);
+        background-color: g.$color-gold;
+        padding: 2px 12px;
+        @include g.pc{
+            font-size: 1.2rem;
+            padding: 0.2rem 1.2rem;
+        }
+        @include g.tab{
+            font-size: 3.2rem;
+            padding: 0.7rem 1.1rem;
+        }
+    }
+    &__title{
+        @include g.font-style(16px, g.$color-black, 600, 1.5, 0);
+        margin-top: 20px;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        @include g.pc{
+            font-size: 1.6rem;
+            margin-top: 2rem;
+        }
+        @include g.tab{
+            font-size: 4rem;
+            margin-top: 2.4rem;
+        }
+    }
+}
