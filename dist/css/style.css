@@ -1066,6 +1066,31 @@ a[href^="tel:"] {
   margin-top: 200px;
 }
 
+.footer__bottom {
+  padding: 80px 0 27px;
+}
+
+.footer__logo {
+  width: 343px;
+  aspect-ratio: 343/51;
+  margin: 0 auto;
+}
+
+.footer__logo img {
+  height: auto;
+}
+
+.footer__copyright {
+  font-size: 12px;
+  color: #333333;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0;
+  display: block;
+  text-align: center;
+  margin-top: 80px;
+}
+
 .access {
   display: -webkit-box;
   display: -ms-flexbox;
