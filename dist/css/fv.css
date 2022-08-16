@@ -747,7 +747,8 @@ p.text-box {
 }
 
 .button-tab a:hover span {
-  right: 25%;
+  -webkit-transform: translateX(6rem);
+          transform: translateX(6rem);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -758,11 +759,8 @@ p.text-box {
   width: 1.6rem;
   height: 51.2px;
   height: 3.2rem;
-  position: absolute;
-  top: 50%;
-  right: 27%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateX(4rem);
+          transform: translateX(4rem);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -773,11 +771,12 @@ p.text-box {
   font-weight: 600;
   line-height: 1;
   letter-spacing: 0.1em;
-  padding: 50px 25px;
+  padding: 46px 25px;
   background-color: transparent;
   border: solid 2px #ffffff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  display: block;
 }
 
 .tategaki-button a:hover {
@@ -971,8 +970,8 @@ p.text-box {
   max-width: 100%;
   z-index: 1;
   opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
   height: 100%;
 }
 
@@ -1019,7 +1018,7 @@ p.text-box {
 
   .tategaki-button a {
     font-size: 2rem;
-    padding: 5rem 2.5rem;
+    padding: 4.6rem 2.5rem;
   }
 
   .header__logo {

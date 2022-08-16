@@ -2,15 +2,24 @@
 //h2タイトル
 .section__title{
     &_size_s{
-        @include g.font-style(48px,g.$color-white, 500, 2, 0.1em);
+        @include g.font-style(100px,g.$color-white, 500, 1.2, 0.031em);
         white-space: nowrap;
         font-feature-settings: "palt";
         font-feature-settings: "pkna";
         @include g.pc{
-            font-size: 4.8rem;
+            font-size: 10rem;
         }
         @include g.tab{
-            font-size: 8rem;
+            font-size: 12rem;
+        }
+        span{
+            font-size: 32px;
+            @include g.pc{
+                font-size: 3.2rem;
+            }
+            @include g.tab{
+                font-size: 4.8rem;
+            }
         }
     }
     &_belt_lr{

@@ -2,23 +2,17 @@
 //3つの幸せ
 .happiness{
     width: 100%;
-    padding: 91px 0 57px;
+    padding: 62px 0;
     background-image: url("../images/kodawari-bg@2x.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     @include g.pc{
-        padding: 9.1rem 5.7rem;
+        padding: 6.2rem 0;
     }
     @include g.tab{
         background-image: url("../images/merit-bg@2x.webp");
-        padding: 3.4rem 0 6.2rem;
-    }
-    &__title{
-        margin-top: -55px;
-        @include g.pc{
-            margin-top: -5.5rem;
-        }
+        padding: 18.6rem 0 3.7rem;
     }
     &__inner{
         display: flex;
@@ -32,25 +26,25 @@
         display: flex;
         flex-direction: row-reverse;
         gap: 40px;
-        margin-right: 30px;
+        margin-right: 42px;
         @include g.pc{
             gap: 4rem;
-            margin-right: 3rem;
+            margin-right: 4.2rem;
         }
         @include g.tab{
             flex-direction: column;
             align-items: center;
-            gap: 20rem;
+            gap: 23rem;
             margin-right: 0;
-            margin-top: 17.4rem;
+            margin-top: 35.6rem;
         }
     }
     &__link{
-        margin-right: 80px;
-        margin-top: -300px;
+        margin-right: 82px;
+        margin-top: -180px;
         @include g.pc{
-            margin-right: 8rem;
-            margin-top: -30rem;
+            margin-right: 8.2rem;
+            margin-top: -18rem;
         }
         @include g.tab{
             display: none;
@@ -59,7 +53,7 @@
             display: none;
             @include g.tab{
                 display: block;
-                margin-top: 12rem;
+                margin-top: 8rem;
             }
             
         }
@@ -78,23 +72,32 @@
         @include g.tab{
             font-size: 7.2rem;
         }
-        span{
-            display: inline-block;
-            width: 84px;
-            aspect-ratio: 1/1;
-            position: absolute;
-            bottom: 101%;
-            left: 50%;
-            transform: translateX(-50%);
+        &_size_s{
+            font-size: 20px;
             @include g.pc{
-                width: 8.4rem;
+                font-size: 2rem;
             }
             @include g.tab{
-                width: 19rem;
+                font-size: 4rem;
             }
-            img{
-                height: auto;
-            }
+        }
+    }
+    &__mark{
+        display: inline-block;
+        width: 84px;
+        aspect-ratio: 1/1;
+        position: absolute;
+        bottom: 101%;
+        left: 50%;
+        transform: translateX(-50%);
+        @include g.pc{
+            width: 8.4rem;
+        }
+        @include g.tab{
+            width: 19rem;
+        }
+        img{
+            height: auto;
         }
     }
     &__text-box{
@@ -245,6 +248,7 @@
             position: absolute;
             top: 0;
             left: -20%;
+            z-index: -1;
             @include g.pc{
                 width: 69.4rem;
             }
