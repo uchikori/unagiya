@@ -722,6 +722,14 @@ p.text-box {
   text-orientation: upright;
 }
 
+.ft-mt-200 {
+  margin-top: 200px;
+}
+
+.ft-mt-100 {
+  margin-top: 100px;
+}
+
 .button-tab a {
   width: 100%;
   font-size: 57.6px;
@@ -872,7 +880,7 @@ p.text-box {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-left: auto;
-  gap: 60px;
+  gap: 40px;
 }
 
 .gloval-navi__items {
@@ -1007,6 +1015,52 @@ p.text-box {
   height: auto;
 }
 
+.pg-main-visual {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.pg-main-visual__bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.pg-main-visual__image {
+  width: 100%;
+  height: 100%;
+}
+
+.pg-main-visual__container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pg-main-visual__textbox {
+  position: relative;
+}
+
+.pg-main-visual__copy {
+  font-size: 60px;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0;
+  text-shadow: 0 0 32px rgba(0, 0, 0, .2);
+}
+
 @media only screen and (max-width: 1232px) {
   html {
     font-size: 0.8116883117vw;
@@ -1014,6 +1068,14 @@ p.text-box {
 
   p.text-box {
     font-size: 1.6rem;
+  }
+
+  .ft-mt-200 {
+    margin-top: 20rem;
+  }
+
+  .ft-mt-100 {
+    margin-top: 10rem;
   }
 
   .tategaki-button a {
@@ -1045,6 +1107,14 @@ p.text-box {
   .main-visual__copy {
     width: 10.5rem;
   }
+
+  .pg-main-visual {
+    height: 50rem;
+  }
+
+  .pg-main-visual__copy {
+    font-size: 6rem;
+  }
 }
 
 @media only screen and (max-width: 856px) {
@@ -1058,6 +1128,14 @@ p.text-box {
 
   .tab {
     display: block;
+  }
+
+  .ft-mt-200 {
+    margin-top: 26.4rem;
+  }
+
+  .ft-mt-100 {
+    margin-top: 20rem;
   }
 
   .clear-button a {
@@ -1084,7 +1162,7 @@ p.text-box {
 
   .gloval-navi {
     position: absolute;
-    top: 183%;
+    top: 167%;
     right: 3.8%;
   }
 
@@ -1110,6 +1188,18 @@ p.text-box {
     width: 10rem;
     -webkit-transform: translateY(10%);
             transform: translateY(10%);
+  }
+
+  .pg-main-visual {
+    height: 100rem;
+    aspect-ratio: 856/1000;
+  }
+
+  .pg-main-visual__copy {
+    font-size: 8rem;
+    letter-spacing: 0.1em;
+    -webkit-transform: translateY(15.6rem);
+            transform: translateY(15.6rem);
   }
 }
 

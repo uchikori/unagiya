@@ -37,6 +37,25 @@ p.text-box{
     writing-mode: vertical-lr;
     text-orientation: upright;
 }
+//マージン
+.ft-mt-200{
+    margin-top: 200px;
+    @include g.pc{
+        margin-top: 20rem;
+    }
+    @include g.tab{
+        margin-top: 26.4rem;
+    }
+}
+.ft-mt-100{
+    margin-top: 100px;
+    @include g.pc{
+        margin-top: 10rem;
+    }
+    @include g.tab{
+        margin-top: 20rem;
+    }
+}
 //スクロールアニメーション用
 // .bgextend{
 //     position: relative;

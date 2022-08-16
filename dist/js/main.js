@@ -3,9 +3,10 @@
 jQuery(document).ready(function () {
   loading();
   indicator();
+  crossfade();
   anchor();
-  scrollAnimation();
   swiper();
+  tab();
 });
 /**
  * ローディングアニメーション
@@ -42,24 +43,29 @@ function indicator() {
  */
 
 
-var elInner, duration, defaultIndex, _switchImage;
+function crossfade() {
+  if (jQuery('.main-visual__image')) {
+    var elInner, duration, defaultIndex, _switchImage;
 
-elInner = document.getElementsByClassName('main-visual__image');
-duration = 5000;
-defaultIndex = 0;
+    elInner = document.getElementsByClassName('main-visual__image');
+    duration = 5000;
+    defaultIndex = 0;
 
-_switchImage = function switchImage(next) {
-  var current = next ? next - 1 : elInner.length - 1;
-  elInner[current].classList.remove('is-visible');
-  elInner[next].classList.add('is-visible');
-  next = ++next < elInner.length ? next : 0;
-  setTimeout(_switchImage.bind(this, next), duration);
-};
+    _switchImage = function switchImage(next) {
+      var current = next ? next - 1 : elInner.length - 1;
+      elInner[current].classList.remove('is-visible');
+      elInner[next].classList.add('is-visible');
+      next = ++next < elInner.length ? next : 0;
+      setTimeout(_switchImage.bind(this, next), duration);
+    };
 
-window.onload = _switchImage.bind(void 0, defaultIndex);
+    window.onload = _switchImage.bind(this, defaultIndex);
+  }
+}
 /**
  * アンカーリンクスクロールアニメーション
  */
+
 
 function anchor() {
   jQuery('.js-anchor').click(function () {
@@ -79,54 +85,44 @@ function anchor() {
   });
 }
 /**
- * スクロールアニメーション
- */
-
-
-var scrollTrigger = document.querySelectorAll('.scrollTrigger');
-
-function scrollAnimation() {
-  scrollTrigger.forEach(function (item) {
-    gsap.to(item, {
-      scrollTrigger: {
-        trigger: item,
-        start: 'top bottom-=15%',
-        end: 'center center',
-        markers: true,
-        onEnter: function onEnter() {
-          item.classList.add('scroll-on');
-        }
-      }
-    });
-  });
-}
-/**
  * スライダーアニメーション
  */
 
 
 function swiper() {
-  var mySwiper = new Swiper('.swiper-container', {
-    autoplay: {
-      delay: 5000
-    },
-    spaceBetween: 16,
-    loop: true,
-    slidesPerView: 1,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    },
-    initialSlide: 0,
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      857: {
-        slidesPerView: 4
+  if (jQuery('.swiper-container')) {
+    var mySwiper = new Swiper('.swiper-container', {
+      autoplay: {
+        delay: 5000
+      },
+      spaceBetween: 16,
+      loop: true,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      initialSlide: 0,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      },
+      breakpoints: {
+        857: {
+          slidesPerView: 4
+        }
       }
-    }
+    });
+  }
+}
+
+function tab() {
+  var tabs = jQuery('.tab-button');
+  jQuery('.tab-button').on('click', function () {
+    jQuery('.active').removeClass('active');
+    jQuery(this).addClass('active');
+    var index = tabs.index(this);
+    jQuery('.content-item').removeClass('show').eq(index).addClass('show');
   });
 }

@@ -583,6 +583,7 @@ a[href^="tel:"] {
 
 .column-sec {
   margin-top: 196px;
+  margin-bottom: 200px;
   position: relative;
 }
 
@@ -666,6 +667,126 @@ a[href^="tel:"] {
 
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 5px;
+}
+
+.category {
+  margin-top: 100px;
+}
+
+.category__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 16px;
+}
+
+.category__item {
+  min-width: 192px;
+  padding: 9px;
+  border: solid 1px #bf8c4e;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.category__item:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #bf8c4e;
+}
+
+.category__item:hover .category__name {
+  color: #ffffff;
+}
+
+.category__item.active {
+  background-color: #bf8c4e;
+}
+
+.category__name {
+  font-size: 20px;
+  color: #bf8c4e;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.active .category__name {
+  color: #ffffff;
+}
+
+.column {
+  margin-top: 40px;
+}
+
+.column__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 49px 16px;
+}
+
+.content-item {
+  display: none;
+}
+
+.content-item.show {
+  display: block;
+}
+
+.pagination {
+  margin-top: 83px;
+  margin-bottom: 100px;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav-links .page-numbers {
+  width: 32px;
+  height: 32px;
+  border: solid 1px #bf8c4e;
+  font-size: 20px;
+  color: #bf8c4e;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: center;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.nav-links .page-numbers.current {
+  color: #ffffff;
+  background-color: #bf8c4e;
+}
+
+.nav-links .page-numbers:hover {
+  color: #ffffff;
+  background-color: #bf8c4e;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .button-tab a {
@@ -1066,10 +1187,6 @@ a[href^="tel:"] {
   margin: 0 auto;
 }
 
-.footer {
-  margin-top: 200px;
-}
-
 .footer__bottom {
   padding: 80px 0 27px;
 }
@@ -1293,6 +1410,7 @@ a[href^="tel:"] {
 
   .column-sec {
     margin-top: 19.6rem;
+    margin-bottom: 20rem;
   }
 
   .column-sec__bg {
@@ -1315,6 +1433,40 @@ a[href^="tel:"] {
 
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: -5.3rem;
+  }
+
+  .category {
+    margin-top: 10rem;
+  }
+
+  .category__items {
+    gap: 1.6rem;
+  }
+
+  .category__item {
+    min-width: 19.2rem;
+    padding: 0.9rem;
+  }
+
+  .category__name {
+    font-size: 2rem;
+  }
+
+  .column {
+    margin-top: 4rem;
+  }
+
+  .column__items {
+    gap: 4.9rem 1.6rem;
+  }
+
+  .pagination {
+    margin-top: 8.3rem;
+    margin-bottom: 10rem;
+  }
+
+  .nav-links .page-numbers {
+    font-size: 2rem;
   }
 
   .tategaki-button a {
@@ -1374,10 +1526,6 @@ a[href^="tel:"] {
 
   .container {
     width: 94%;
-  }
-
-  .footer {
-    margin-top: 20rem;
   }
 
   .access__left {
@@ -1592,6 +1740,10 @@ a[href^="tel:"] {
     margin-top: 4rem;
   }
 
+  .column-sec {
+    margin-bottom: 26.4rem;
+  }
+
   .column-sec__bg {
     display: none;
   }
@@ -1613,6 +1765,45 @@ a[href^="tel:"] {
 
   .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 1.2rem;
+  }
+
+  .category__items {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 4rem 2rem;
+  }
+
+  .category__item {
+    min-width: calc(50% - 1rem);
+    padding: 2rem;
+  }
+
+  .category__name {
+    font-size: 4rem;
+  }
+
+  .column {
+    margin-top: 10rem;
+  }
+
+  .column__items {
+    gap: 8rem;
+  }
+
+  .pagination {
+    margin-bottom: 20rem;
+  }
+
+  .nav-links {
+    gap: 2rem;
+  }
+
+  .nav-links .page-numbers {
+    width: 6.4rem;
+    height: 6.4rem;
+    font-size: 4rem;
+    line-height: 6.4rem;
   }
 
   .clear-button a {
@@ -1707,10 +1898,6 @@ a[href^="tel:"] {
 
   .wide-container {
     width: 100%;
-  }
-
-  .footer {
-    margin-top: 26.4rem;
   }
 
   .access {

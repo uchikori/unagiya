@@ -1,0 +1,135 @@
+@use '../global' as g;
+//カテゴリータブ
+.category{
+    margin-top: 100px;
+    @include g.pc{
+        margin-top: 10rem;
+    }
+    &__items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        @include g.pc{
+            gap: 1.6rem;
+        }
+        @include g.tab{
+            justify-content: flex-start;
+            gap: 4rem 2rem;
+        }
+    }
+    &__item{
+        min-width: 192px;
+        padding: 9px;
+        border: solid 1px g.$color-gold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        @include g.pc{
+            min-width: 19.2rem;
+            padding: 0.9rem;
+        }
+        @include g.tab{
+            min-width: calc((100% - 2rem) / 2);
+            padding: 2rem;
+        }
+        &:hover{
+            transition: all 0.3s ease;
+            background-color: g.$color-gold;
+            .category__name{
+                color: g.$color-white;
+            }
+        }
+        &.active{
+            background-color: g.$color-gold;
+        }
+    }
+    &__name{
+        @include g.font-style(20px, g.$color-gold, 500, 1, 0);
+        text-align: center;
+        @include g.pc{
+            font-size: 2rem;
+        }
+        @include g.tab{
+            font-size: 4rem;
+        }
+        .active &{
+            color: g.$color-white;
+        }
+    }
+}
+//記事一覧
+.column{
+    margin-top: 40px;
+    @include g.pc{
+        margin-top: 4rem;
+    }
+    @include g.tab{
+        margin-top: 10rem;
+    }
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 49px 16px;
+        @include g.pc{
+            gap: 4.9rem 1.6rem;
+        }
+        @include g.tab{
+            gap: 8rem;
+        }
+    }
+}
+.content-item{
+    display: none;
+    &.show{
+        display: block;
+    }
+}
+//ページネーション
+.pagination{
+    margin-top: 83px;
+    margin-bottom: 100px;
+    @include g.pc{
+        margin-top: 8.3rem;
+        margin-bottom: 10rem;
+    }
+    @include g.tab{
+        margin-bottom: 20rem;
+    }
+}
+.nav-links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    @include g.tab{
+        gap: 2rem;
+    }
+    .page-numbers{
+        width: 32px;
+        height: 32px;
+        border: solid 1px g.$color-gold;
+        @include g.font-style(20px, g.$color-gold, 500, 32px, 0);
+        text-align: center;
+        background-color: transparent;
+        transition: all 0.3s ease;
+        @include g.pc{
+            font-size: 2rem;
+        }
+        @include g.tab{
+            width: 6.4rem;
+            height: 6.4rem;
+            font-size: 4rem;
+            line-height: 6.4rem
+        }
+        &.current{
+            color: g.$color-white;
+            background-color: g.$color-gold;
+        }
+        &:hover{
+            color: g.$color-white;
+            background-color: g.$color-gold;
+            transition: all 0.3s ease;
+        }
+    }
+}

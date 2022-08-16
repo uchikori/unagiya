@@ -424,9 +424,14 @@
 //コラム
 .column-sec{
     margin-top: 196px;
+    margin-bottom: 200px;
     position: relative;
     @include g.pc{
         margin-top: 19.6rem;
+        margin-bottom: 20rem;
+    }
+    @include g.tab{
+        margin-bottom: 26.4rem;
     }
     &__bg{
         position: absolute;
