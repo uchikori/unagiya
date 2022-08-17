@@ -116,6 +116,10 @@ function swiper() {
     });
   }
 }
+/**
+ * タブ切り替え
+ */
+
 
 function tab() {
   var tabs = jQuery('.tab-button');

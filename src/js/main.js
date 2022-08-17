@@ -52,8 +52,6 @@ function crossfade(){
     window.onload = switchImage.bind(this, defaultIndex);
   }
 }
-
-
 /**
  * アンカーリンクスクロールアニメーション
  */
@@ -102,7 +100,9 @@ function swiper(){
     });
   }
 }
-  
+/**
+ * タブ切り替え
+ */
 function tab(){
   let tabs = jQuery('.tab-button');
     jQuery('.tab-button').on('click', function(){
