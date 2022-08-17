@@ -789,6 +789,196 @@ a[href^="tel:"] {
   transition: all 0.3s ease;
 }
 
+.article {
+  margin: 100px 0;
+}
+
+.article__cat-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 16px;
+}
+
+.article__cat-item {
+  min-width: 192px;
+  padding: 9px;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: center;
+  background-color: #bf8c4e;
+}
+
+.article__title {
+  font-size: 32px;
+  color: #333333;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0;
+  margin-top: 40px;
+}
+
+.article__thumbnail {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+}
+
+.article__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 16px;
+  color: #333333;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0;
+  margin-top: 20px;
+}
+
+.article__time span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.article__body {
+  padding: 58px 0 96px;
+}
+
+.article h2 {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0;
+  padding: 18px 24px;
+  background-color: #591902;
+  margin: 20px 0;
+}
+
+.article h3 {
+  font-size: 24px;
+  color: #591902;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0;
+  border-top: solid 1px #591902;
+  border-bottom: solid 1px #591902;
+  position: relative;
+  margin: 20px 0;
+  padding: 0 24px;
+}
+
+.article h3:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #591902;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+.article h3:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #591902;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.article h4 {
+  font-size: 24px;
+  color: #591902;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0;
+  border-bottom: solid 1px #591902;
+  margin: 20px 0;
+  padding: 0 24px;
+}
+
+.article p {
+  font-size: 16px;
+  color: #333333;
+  font-weight: 500;
+  line-height: 2.5;
+  letter-spacing: 0;
+  padding: 20px 0;
+}
+
+.more-article__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.more-article__prev span {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+  margin-right: 20px;
+}
+
+.more-article__next span {
+  margin-left: 20px;
+}
+
+.more-article__link {
+  font-size: 24px;
+  color: #591902;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.more-article__prev .more-article__link {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.more-article__link span {
+  display: inline-block;
+  width: 12px;
+  height: 24px;
+}
+
 .button-tab a {
   width: 100%;
   font-size: 57.6px;
@@ -1182,6 +1372,11 @@ a[href^="tel:"] {
   margin: 0 auto;
 }
 
+.narrow-container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
 .wide-container {
   width: 1760px;
   margin: 0 auto;
@@ -1469,6 +1664,73 @@ a[href^="tel:"] {
     font-size: 2rem;
   }
 
+  .article {
+    margin: 10rem 0;
+  }
+
+  .article__cat-items {
+    gap: 1.6rem;
+  }
+
+  .article__cat-item {
+    min-width: 19.2rem;
+    padding: 0.9rem;
+    font-size: 2rem;
+  }
+
+  .article__title {
+    margin-top: 4rem;
+  }
+
+  .article__thumbnail {
+    margin-top: 4rem;
+  }
+
+  .article__time {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+
+  .article__body {
+    padding: 5.8rem 0 9.6rem;
+  }
+
+  .article h2 {
+    padding: 1.8rem 2.4rem;
+    margin: 2rem 0;
+  }
+
+  .article h3 {
+    margin: 2rem 0;
+    padding: 0 2.4rem;
+  }
+
+  .article h4 {
+    margin: 2rem 0;
+    padding: 0 2.4rem;
+  }
+
+  .article p {
+    padding: 2rem 0;
+  }
+
+  .more-article__prev span {
+    margin-right: 2rem;
+  }
+
+  .more-article__next span {
+    margin-left: 2rem;
+  }
+
+  .more-article__link {
+    z-index: 2.4rem;
+  }
+
+  .more-article__link span {
+    width: 1.2rem;
+    height: 2.4rem;
+  }
+
   .tategaki-button a {
     font-size: 2rem;
     padding: 4.6rem 2.5rem;
@@ -1525,6 +1787,10 @@ a[href^="tel:"] {
   }
 
   .container {
+    width: 94%;
+  }
+
+  .narrow-container {
     width: 94%;
   }
 
@@ -1806,6 +2072,74 @@ a[href^="tel:"] {
     line-height: 6.4rem;
   }
 
+  .article {
+    margin: 10rem 0 20rem;
+  }
+
+  .article__cat-items {
+    gap: 4rem 2rem;
+  }
+
+  .article__cat-item {
+    min-width: calc(50% - 1rem);
+    padding: 2rem;
+    font-size: 4rem;
+  }
+
+  .article__title {
+    font-size: 6rem;
+    margin-top: 9rem;
+  }
+
+  .article__thumbnail {
+    margin-top: 10rem;
+  }
+
+  .article__time {
+    font-size: 3.2rem;
+    margin-top: 4rem;
+  }
+
+  .article__time span {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+  }
+
+  .article__body {
+    padding: 3.5rem 0 8rem;
+  }
+
+  .article h2 {
+    font-size: 4.8rem;
+    padding: 1.3rem 2.4rem;
+    margin: 4rem 0;
+  }
+
+  .article h3 {
+    font-size: 4.8rem;
+    margin: 4rem 0;
+  }
+
+  .article h4 {
+    font-size: 4.8rem;
+    margin: 4rem 0;
+  }
+
+  .article p {
+    font-size: 3.2rem;
+    padding: 4rem 0;
+  }
+
+  .more-article__link {
+    font-size: 3.2rem;
+  }
+
+  .more-article__link span {
+    width: 1.6rem;
+    height: 3.2rem;
+  }
+
   .clear-button a {
     font-size: 2.8rem;
   }
@@ -1893,6 +2227,10 @@ a[href^="tel:"] {
   }
 
   .container {
+    width: 92.523364486%;
+  }
+
+  .narrow-container {
     width: 92.523364486%;
   }
 

@@ -10,6 +10,16 @@
         width: calc(792/856)*100%;
     }
 }
+.narrow-container{
+    width: 1024px;
+    margin: 0 auto;
+    @include g.pc{
+        width: 94%;
+    }
+    @include g.tab{
+        width: calc(792/856)*100%;
+    }
+}
 .wide-container{
     width: 1760px;
     margin: 0 auto;

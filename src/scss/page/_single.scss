@@ -1,1 +1,227 @@
 @use '../global' as g;
+//記事
+.article{
+    margin: 100px 0; 
+    @include g.pc{
+        margin: 10rem 0;
+    }
+    @include g.tab{
+        margin: 10rem 0 20rem;
+    }
+    &__cat-items{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 16px;
+        @include g.pc{
+            gap: 1.6rem;
+        }
+        @include g.tab{
+            gap: 4rem 2rem;
+        }
+    }
+    &__cat-item{
+        min-width: 192px;
+        padding: 9px;
+        @include g.font-style(20px, g.$color-white, 500, 1, 0);
+        text-align: center;
+        background-color: g.$color-gold;
+        @include g.pc{
+            min-width: 19.2rem;
+            padding: 0.9rem;
+            font-size: 2rem;
+        }
+        @include g.tab{
+            min-width: calc((100% - 2rem) / 2);
+            padding: 2rem;
+            font-size: 4rem;
+        }
+    }
+    &__title{
+        @include g.font-style(32px, g.$color-black, 600, 1.5, 0);
+        margin-top: 40px;
+        @include g.pc{
+            margin-top: 4rem;
+        }
+        @include g.tab{
+            font-size: 6rem;
+            margin-top: 9rem;
+        }
+    }
+    &__thumbnail{
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+        @include g.pc{
+            margin-top: 4rem;
+        }
+        @include g.tab{
+            margin-top: 10rem;
+        }
+    }
+    &__time{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @include g.font-style(16px, g.$color-black, 500, 1, 0);
+        margin-top: 20px;
+        @include g.pc{
+            font-size: 1.6rem;
+            margin-top: 2rem;
+        }
+       @include g.tab{
+            font-size: 3.2rem;
+            margin-top: 4rem;
+       }
+        span{
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            @include g.tab{
+                width: 4rem;
+                height: 4rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+    &__body{
+        padding: 58px 0 96px;
+        @include g.pc{
+            padding: 5.8rem 0 9.6rem;
+        }
+        @include g.tab{
+            padding: 3.5rem 0 8rem;
+        }
+    }
+    h2{
+        @include g.font-style(24px, g.$color-white, 500, 1.5, 0);
+        padding: 18px 24px;
+        background-color: g.$color-brown;
+        margin: 20px 0;
+        @include g.pc{
+            padding: 1.8rem 2.4rem;
+            margin: 2rem 0;
+        }
+        @include g.tab{
+            font-size: 4.8rem;
+            padding: 1.3rem 2.4rem;
+            margin: 4rem 0;
+        }
+    }
+    h3{
+        @include g.font-style(24px, g.$color-brown, 500, 1.5, 0);
+        border-top: solid 1px g.$color-brown;
+        border-bottom: solid 1px g.$color-brown;
+        position: relative;
+        margin: 20px 0;
+        padding: 0 24px;
+        @include g.pc{
+            margin: 2rem 0;
+            padding: 0 2.4rem;
+        }
+        @include g.tab{
+            font-size: 4.8rem;
+            margin: 4rem 0;
+        }
+        &:before{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: g.$color-brown;
+            position: absolute;
+            top: -10px;
+            left: 0;
+        }
+        &:after{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: g.$color-brown;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+        }
+            
+    }
+    h4{
+        @include g.font-style(24px, g.$color-brown, 500, 1.5, 0);
+        border-bottom: solid 1px g.$color-brown;
+        margin: 20px 0;
+        padding: 0 24px;
+        @include g.pc{
+            margin: 2rem 0;
+            padding: 0 2.4rem;
+        }
+        @include g.tab{
+            font-size: 4.8rem;
+            margin: 4rem 0;
+        }
+    }
+    p{
+        @include g.font-style(16px, g.$color-black, 500, 2.5, 0);
+        padding: 20px 0;
+        @include g.pc{
+            padding: 2rem 0;
+        }
+        @include g.tab{
+            font-size: 3.2rem;
+            padding: 4rem 0;
+        }
+    }
+}
+//ページネーション
+.more-article{
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__prev{
+        span{
+            transform: rotateZ(180deg);
+            margin-right: 20px;
+            @include g.pc{
+                margin-right: 2rem;
+            }
+        }
+    }
+    &__next{
+        span{
+            margin-left: 20px;
+            @include g.pc{
+                margin-left: 2rem;
+            }
+        }
+    }
+    &__link{
+        @include g.font-style(24px, g.$color-brown, 500, 1, 0);
+        display: flex;
+        align-items: center;
+        @include g.pc{
+            z-index: 2.4rem;
+        }
+        @include g.tab{
+            font-size: 3.2rem;
+        }
+        .more-article__prev &{
+            flex-direction: row-reverse;
+        }
+        span{
+            display: inline-block;
+            width: 12px;
+            height: 24px;
+            @include g.pc{
+                width: 1.2rem;
+                height: 2.4rem;
+            }
+            @include g.tab{
+                width: 1.6rem;
+                height: 3.2rem;
+            }
+        }
+    }
+}
