@@ -1,6 +1,7 @@
 jQuery(document).ready(function(){
   loading();
   indicator();
+  menuOpen();
   crossfade();
   anchor()
   swiper();
@@ -21,7 +22,6 @@ function loading(){
     jQuery(".splash__logo").delay(1300).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
   }
 }
-
 /**
  * ヘッダーページインジケーター
  */
@@ -30,6 +30,28 @@ function loading(){
     let target = jQuery(this).attr('href');
     if(location.href.match(target)){
         jQuery(this).addClass('current');
+    }
+  });
+}
+/**
+ * ドロワーメニュー
+ */
+ function menuOpen(){
+  let humberger = jQuery('.humberger');
+  let spNavi = jQuery('.gloval-navi');
+  // let body = jQuery('body');
+  humberger.on('click', function(){
+    humberger.toggleClass('menu-active');
+    humberger.toggleClass('fixed');
+    spNavi.toggleClass('open');
+    // body.toggleClass('fixed');
+  });
+}
+function resClassRemove(){
+  jQuery(window).on('load resize', function(){
+    let w = jQuery(window).width();
+    if(w <= 768){
+      jQuery('.menu').find('.button__color_orange').removeClass('button__color_orange');
     }
   });
 }

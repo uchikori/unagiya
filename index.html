@@ -51,9 +51,9 @@
                         <li class="gloval-navi__item">
                             <a href="/about.html" class="gloval-navi__link">鰻の成瀬について</a>
                         </li>
-                        <!-- <li class="gloval-navi__item">
+                        <li class="gloval-navi__item">
                             <a href="/column.html" class="gloval-navi__link">うなぎコラム</a>
-                        </li> -->
+                        </li>
                         <li class="gloval-navi__item">
                             <a href="#access" class="gloval-navi__link js-anchor">アクセス</a>
                         </li>
@@ -67,11 +67,22 @@
                 </div>
 
             </div>
+            <div class="cta-button_color_brown">
+                <a href="tel:080-6092-5223" class="cta-button__inner">
+                    <span class="cta-button__icon"><img src="dist/images/map.svg" width="50" height="71" alt="アクセスボタン"></span>
+                    <p class="cta-button__text">ACCESS</p>
+                </a>
+            </div>
             <div class="cta-button">
                 <a href="tel:080-6092-5223" class="cta-button__inner">
                     <span class="cta-button__icon"><img src="dist/images/tel-icon.svg" width="53" height="69" alt="電話ボタン"></span>
-                    <p class="cta-button__tel">TEL</p>
+                    <p class="cta-button__text">TEL</p>
                 </a>
+            </div>
+            <div class="humberger header__humberger">
+                <span class="humberger__line"></span>
+                <span class="humberger__line"></span>
+                <span class="humberger__line"></span>
             </div>
         </div>
     </header>
@@ -79,60 +90,362 @@
         
     <main>
         <!-- ▼メインビジュアル -->
-        <section class="pg-main-visual">
-            <div class="pg-main-visual__bg">
-                <picture class="pg-main-visual__image">
-                    <source media="(min-width: 857px)" type="image/webp" srcset="dist/images/main-image-concept.webp, dist/images/main-image-concept@2x.webp 2x"> 
-                    <source media="(min-width: 857px)" type="image/jpeg" srcset="dist/images/main-image-concept.jpg, dist/images/main-image-concept@2x.jpg 2x">
-                    <source media="(max-width: 856px)" type="image/webp" srcset="dist/images/main-image-concept-sp@2x.webp"> 
-                    <source media="(max-width: 856px)" type="image/jpeg" srcset="dist/images/main-image-concept-sp@2x.jpg">  
-                    <img srcset="dist/images/main-image-concept.jpg" src="dist/images/main-image-concept.jpg" width="1920" height="500" alt="鰻の成瀬について">
-                </picture>
+        <section class="main-visual">
+            <div class="main-visual__bg">
+                <div class="main-visual__inner">
+                    <picture class="main-visual__image">
+                        <source media="(min-width: 769px)" type="image/webp" srcset="dist/images/main-image01.webp, dist/images/main-image01@2x.webp 2x"> 
+                        <source media="(min-width: 769px)" type="image/jpeg" srcset="dist/images/main-image01.jpg, dist/images/main-image01@2x.jpg 2x">
+                        <source media="(max-width: 768px)" type="image/webp" srcset="dist/images/main-image01-sp@2x.webp"> 
+                        <source media="(max-width: 768px)" type="image/jpeg" srcset="dist/images/main-image01-sp@2x.jpg">  
+                        <img srcset="dist/images/main-image01.jpg" src="dist/images/main-image01.jpg" width="1920" height="980" alt="">
+                    </picture>
+                    <picture class="main-visual__image">
+                        <source media="(min-width: 769px)" type="image/webp" srcset="dist/images/main-image02.webp, dist/images/main-image02@2x.webp 2x"> 
+                        <source media="(min-width: 769px)" type="image/jpeg" srcset="dist/images/main-image02.jpg, dist/images/main-image02@2x.jpg 2x">
+                        <source media="(max-width: 768px)" type="image/webp" srcset="dist/images/main-image02-sp@2x.webp"> 
+                        <source media="(max-width: 768px)" type="image/jpeg" srcset="dist/images/main-image02-sp@2x.jpg">  
+                        <img srcset="dist/images/main-image02.jpg" src="dist/images/main-image02.jpg" width="1920" height="980" alt="">
+                    </picture>
+                    <picture class="main-visual__image">
+                        <source media="(min-width: 769px)" type="image/webp" srcset="dist/images/main-image03.webp, dist/images/main-image03@2x.webp 2x"> 
+                        <source media="(min-width: 769px)" type="image/jpeg" srcset="dist/images/main-image03.jpg, dist/images/main-image03@2x.jpg 2x">
+                        <source media="(max-width: 768px)" type="image/webp" srcset="dist/images/main-image03-sp@2x.webp"> 
+                        <source media="(max-width: 768px)" type="image/jpeg" srcset="dist/images/main-image03-sp@2x.jpg">  
+                        <img srcset="dist/images/main-image03.jpg" src="dist/images/main-image03.jpg" width="1920" height="980" alt="">
+                    </picture>
+                    <picture class="main-visual__image">
+                        <source media="(min-width: 769px)" type="image/webp" srcset="dist/images/main-image04.webp, dist/images/main-image04@2x.webp 2x"> 
+                        <source media="(min-width: 769px)" type="image/jpeg" srcset="dist/images/main-image04.jpg, dist/images/main-image04@2x.jpg 2x">
+                        <source media="(max-width: 768px)" type="image/webp" srcset="dist/images/main-image04-sp@2x.webp"> 
+                        <source media="(max-width: 768px)" type="image/jpeg" srcset="dist/images/main-image04-sp@2x.jpg">  
+                        <img srcset="dist/images/main-image04.jpg" src="dist/images/main-image04.jpg" width="1920" height="980" alt="">
+                    </picture>
+                </div>
             </div>
-            <div class="pg-main-visual__container">
-                <div class="pg-main-visual__textbox">
-                    <h1 class="pg-main-visual__copy">
-                        鰻の成瀬について
+            <div class="main-visual__container">
+                <div class="main-visual__textbox">
+                    <h1 class="main-visual__copy">
+                        <img src="dist/images/main-copy.svg" width="105" height="730" alt="鰻を食べるって“幸せ”">
                     </h1>
                 </div>
             </div>
         </section>
          <!-- ▲メインビジュアル -->
 
-         <!-- ▼記事 -->
-         <article class="article">
-            <div class="article__inner narrow-container">
-                <ul class="article__cat-items">
-                    <li class="article__cat-item">コラム</li>
+         <!-- ▼3つの幸せ -->
+         <section class="happiness">
+            <div class="happiness__inner container">
+                <h2 class="section__title_size_s happiness__title tategaki-rl">
+                    鰻の成瀬<span>がお届けする</span><br>&emsp;&emsp;&emsp;&emsp;三<span>つの幸せ</span>
+                </h2>
+                <ul class="happiness__items">
+                    <li class="tategaki-comp tategaki-rl">
+                        <h3 class="tategaki-comp__title"><span class="tategaki-comp__mark"><img src="dist/images/an.svg" width="84" height="84" alt="安"></span><span class="tategaki-comp__title_size_s">鰻を</span>もっと身近に</h3>
+                        <p class="tategaki-comp__text-box">
+                            「高級食材」というイメージが強い鰻ですが、「鰻の成瀬」は一人でも多くの方々においしく鰻を召し上がって頂けるよう、よりリーズナブルな価格でのご提供を常に目指しています。<br>
+                            おいしい鰻をたくさん食べましょう。
+                        </p>
+                    </li>
+                    <li class="tategaki-comp tategaki-rl">
+                        <h3 class="tategaki-comp__title"><span class="tategaki-comp__mark"><img src="dist/images/ken.svg" width="84" height="84" alt="健"></span><span class="tategaki-comp__title_size_s">鰻で</span>もっと健康に</h3>
+                        <p class="tategaki-comp__text-box">
+                            スタミナ食と言われる所以の健康に役立つ栄養素が豊富です！<br>
+                            疲労回復に役立つビタミンB1、<br>
+                            免疫力を高めたり、風邪予防になると言われているビタミンA、<br>
+                            骨を上部にするカルシウム等、豊富な栄養素が含まれています。<br>
+                            おいしい鰻でもっと健康になりましょう。
+                        </p>
+                    </li>
+                    <li class="tategaki-comp tategaki-rl">
+                        <h3 class="tategaki-comp__title"><span class="tategaki-comp__mark"><img src="dist/images/bi.svg" width="84" height="84" alt="美"></span><span class="tategaki-comp__title_size_s">鰻で</span>もっと美しく</h3>
+                        <p class="tategaki-comp__text-box">
+                            鰻には美容に役立つ栄養素がたくさんあります！<br>
+                            細胞の再生向上が期待されるビタミンB2、<br>
+                            表皮の新陳代謝を保つビタミンA、<br>
+                            細胞の老化防止の働きがあるビタミンE等、鰻は美容の面でも効果が期待される食材です。<br>
+                            おいしい鰻でもっと美しくなりましょう。
+                        </p>
+                    </li>
                 </ul>
-                <h1 class="article__title">ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。</h1>
-                <figure class="article__thumbnail">
-                    <img src="dist/images/no-image@2x.png" alt="no-image">
-                </figure>
-                <div class="article__time"><span><img src="dist/images/time-icon.svg" alt=""></span>公開日&nbsp;<time>2022年8月9日</time></div>
-                <div class="article__body">
-                    <h2>見出しh2見出しh2見出しh2見出しh2見出しh2見出しh2見出しh2見出しh2</h2>
-                    <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-                    <h3>見出しh3見出しh3見出しh3見出しh3見出しh3見出しh3見出しh3見出しh3</h3>
-                    <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-                    <h4>見出しh4見出しh4見出しh4見出しh4見出しh4見出しh4見出しh4見出しh4</h4>
-                    <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                <div class="happiness__link tategaki-button tategaki-rl">
+                    <a href="/about.html">鰻のパワーを詳しく見る</a>
                 </div>
-                <!-- ▼ページネーション -->
-                <div class="more-article">
-                    <div class="more-article__inner">
-                        <div class="more-article__prev">
-                            <a class="more-article__link" href="/">前へ<span><img src="dist/images/Arrow023.svg" alt=""></span></a>
+            </div>
+         </section>
+         <div class="happiness__link-tab container button-tab">
+            <a href="/about.html">鰻のパワーを詳しく見る<span><img src="dist/images/Arrow023.svg" alt=""></span></a>
+        </div>
+         <!-- ▲3つの幸せ -->
+
+         <!-- ▼お知らせ -->
+         <section class="news-sec">
+            <div class="news-sec__inner container">
+                <div class="news-sec__title">
+                    <span><img src="dist/images/news-sec-bg.webp" width="366" height="382" alt=""></span>
+                    <h2 class="section__title_belt_lr">お知らせ</h2>
+                </div>
+                <ul class="news-sec__items">
+                    <li class="news-item">
+                        <a href="/single.html">
+                            <div class="news-item__body">
+                                <time class="news-item__time" datetime="2022-08-09">2022年8月9日</time>
+                                <h3 class="news-item__title">ここにお知らせタイトルが入ります。ここにお知らせタイトルが入ります。ここにお知らせタイトルが入ります。</h3>
+                            </div>
+                            <span class="news-item__arrow"><img src="dist/images/Arrow023.svg" width="12" height="24" alt=""></span>
+                        </a>
+                    </li>
+                    <li class="news-item">
+                        <a href="/single.html">
+                            <div class="news-item__body">
+                                <time class="news-item__time" datetime="2022-08-09">2022年8月9日</time>
+                                <h3 class="news-item__title">ここにお知らせタイトルが入ります。ここにお知らせタイトルが入ります。ここにお知らせタイトルが入ります。</h3>
+                            </div>
+                            <span class="news-item__arrow"><img src="dist/images/Arrow023.svg" width="12" height="24" alt=""></span>
+                        </a>
+                    </li>
+                    <li class="news-item">
+                        <a href="/single.html">
+                            <div class="news-item__body">
+                                <time class="news-item__time" datetime="2022-08-09">2022年8月9日</time>
+                                <h3 class="news-item__title">ここにお知らせタイトルが入ります。ここにお知らせタイトルが入ります。ここにお知らせタイトルが入ります。</h3>
+                            </div>
+                            <span class="news-item__arrow"><img src="dist/images/Arrow023.svg" width="12" height="24" alt=""></span>
+                        </a>
+                    </li>
+                    <li class="news-item">
+                        <a href="/single.html">
+                            <div class="news-item__body">
+                                <time class="news-item__time" datetime="2022-08-09">2022年8月9日</time>
+                                <h3 class="news-item__title">ここにお知らせタイトルが入ります。ここにお知らせタイトルが入ります。ここにお知らせタイトルが入ります。</h3>
+                            </div>
+                            <span class="news-item__arrow"><img src="dist/images/Arrow023.svg" width="12" height="24" alt=""></span>
+                        </a>
+                    </li>
+                    <li class="news-item">
+                        <a href="/single.html">
+                            <div class="news-item__body">
+                                <time class="news-item__time" datetime="2022-08-09">2022年8月9日</time>
+                                <h3 class="news-item__title">ここにお知らせタイトルが入ります。ここにお知らせタイトルが入ります。ここにお知らせタイトルが入ります。</h3>
+                            </div>
+                            <span class="news-item__arrow"><img src="dist/images/Arrow023.svg" width="12" height="24" alt=""></span>
+                        </a>
+                    </li>
+                    <li class="news-item">
+                        <a href="/single.html">
+                            <div class="news-item__body">
+                                <time class="news-item__time" datetime="2022-08-09">2022年8月9日</time>
+                                <h3 class="news-item__title">ここにお知らせタイトルが入ります。ここにお知らせタイトルが入ります。ここにお知らせタイトルが入ります。</h3>
+                            </div>
+                            <span class="news-item__arrow"><img src="dist/images/Arrow023.svg" width="12" height="24" alt=""></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+         </section>
+         <!-- ▲お知らせ -->
+
+         <!-- ▼お品書き -->
+         <section class="menu-sec">
+            <div class="menu-sec__innner container">
+                <div class="menu-sec__top">
+                    <div class="menu-sec__title">
+                        <h2 class="section__title_belt_rl">お品書き</h2>
+                    </div>
+                    <ul class="menu-sec__menu-list">
+                        <li class="menu-sec__menu-item">
+                            <a href="#menu01" class="js-anchor">うな重（並・上・特上）</a>
+                        </li>
+                        <li class="menu-sec__menu-item">
+                            <a href="#menu02" class="js-anchor">まぶしうな重（並・上・特上）</a>
+                        </li>
+                        <li class="menu-sec__menu-item">
+                            <a href="#menu03" class="js-anchor">うな玉重（並・上・特上）</a>
+                        </li>
+                    </ul>
+                    <span><img src="dist/images/menu-top-bg@2x.webp" width="694" height="444" alt=""></span>
+                </div>
+                <ul class="menu-sec__items">
+                    <span class="menu-sec__bg"><img src="dist/images/menu-items-bg.svg" alt=""></span>
+                    <li id="menu01" class="menu-item">
+                        <picture class="menu-item__image">
+                            <source media="(min-width: 769px)" type="image/webp" srcset="dist/images/menu-item.webp, dist/images/menu-item@2x.webp 2x"> 
+                            <source media="(min-width: 769px)" type="image/jpeg" srcset="dist/images/menu-item.jpg, dist/images/menu-item@2x.jpg 2x">
+                            <source media="(max-width: 768px)" type="image/webp" srcset="dist/images/menu-item-sp@2x.webp"> 
+                            <source media="(max-width: 768px)" type="image/jpeg" srcset="dist/images/menu-item-sp@2x.jpg">  
+                            <img srcset="dist/images/menu-item.jpg" src="dist/images/menu-item.jpg" width="712" height="480" alt="">
+                        </picture>
+                        <div class="menu-item__body">
+                            <div class="menu-item__title">
+                                <h3 class="menu-item__name">うな重</h3>
+                                <div class="menu-item__price">1,600<span>円</span></div>
+                            </div>
+                            
+                            <p class="menu-item__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。。ここにテキストが入ります。</p>
+                            <p class="menu-item__rank">
+                                ■うな重　並　1,600円<br>
+                                ■うな重　上　2,200円<br>
+                                ■うな重　特　2,600円
+                            </p>
                         </div>
-                        <div class="more-article__next">
-                            <a class="more-article__link" href="/">次へ<span><img src="dist/images/Arrow023.svg" alt=""></span></a>
+                    </li>
+                    <li id="menu02" class="menu-item">
+                        <picture class="menu-item__image">
+                            <source media="(min-width: 769px)" type="image/webp" srcset="dist/images/menu-item02.webp, dist/images/menu-item02@2x.webp 2x"> 
+                            <source media="(min-width: 769px)" type="image/jpeg" srcset="dist/images/menu-item02.jpg, dist/images/menu-item02@2x.jpg 2x">
+                            <source media="(max-width: 768px)" type="image/webp" srcset="dist/images/menu-item02-sp@2x.webp"> 
+                            <source media="(max-width: 768px)" type="image/jpeg" srcset="dist/images/menu-item02-sp@2x.jpg">  
+                            <img srcset="dist/images/menu-item02.jpg" src="dist/images/menu-item02.jpg" width="712" height="480" alt="">
+                        </picture>
+                        <div class="menu-item__body">
+                            <div class="menu-item__title">
+                                <h3 class="menu-item__name">うな重</h3>
+                                <div class="menu-item__price">1,600<span>円</span></div>
+                            </div>
+                            
+                            <p class="menu-item__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                            <p class="menu-item__rank">
+                                ■うな重　並　1,600円<br>
+                                ■うな重　上　2,200円<br>
+                                ■うな重　特　2,600円
+                            </p>
                         </div>
+                    </li>
+                    <li id="menu03" class="menu-item">
+                        <picture class="menu-item__image">
+                            <source media="(min-width: 769px)" type="image/webp" srcset="dist/images/menu-item03.webp, dist/images/menu-item03@2x.webp 2x"> 
+                            <source media="(min-width: 769px)" type="image/jpeg" srcset="dist/images/menu-item03.jpg, dist/images/menu-item03@2x.jpg 2x">
+                            <source media="(max-width: 768px)" type="image/webp" srcset="dist/images/menu-item03-sp@2x.webp"> 
+                            <source media="(max-width: 768px)" type="image/jpeg" srcset="dist/images/menu-item03-sp@2x.jpg">  
+                            <img srcset="dist/images/menu-item03.jpg" src="dist/images/menu-item03.jpg" width="712" height="480" alt="">
+                        </picture>
+                        <div class="menu-item__body">
+                            <div class="menu-item__title">
+                                <h3 class="menu-item__name">うな重</h3>
+                                <div class="menu-item__price">1,600<span>円</span></div>
+                            </div>
+                            
+                            <p class="menu-item__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                            <p class="menu-item__rank">
+                                ■うな重　並　1,600円<br>
+                                ■うな重　上　2,200円<br>
+                                ■うな重　特　2,600円
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+         </section>
+         <!-- ▲お品書き -->
+
+         <!-- ▼コラム -->
+         <section class="column-sec">
+            <span class="column-sec__bg"><img src="dist/images/column-bg@2x.webp" width="534" height="802" alt=""></span>
+            <div class="column-sec__inner container">
+                <div class="column-sec__top">
+                    <div class="column-sec__title">
+                        <h2 class="section__title_border_bottom">うなぎコラム</h2>
+                    </div>
+                    <div class="clear-button">
+                        <a href="/archive.html">過去の記事一覧<span><img src="dist/images/Arrow023-black.svg" alt=""></span></a>
                     </div>
                 </div>
-                <!-- ▲ページネーション -->
+                <div class="column-sec__slider">
+                    <div class="swiper-container column-sec__slider">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide card01">
+                                <a href="/single.html">
+                                    <figure class="card01__image"></figure>
+                                    <div class="card01__body">
+                                        <div class="card01__meta">
+                                            <time class="card01__time" datetime="2022-08-09">2022.08.09</time>
+                                            <span class="card01__cat">コラム</span>
+                                        </div>
+                                        <h3 class="card01__title">
+                                            ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide card01">
+                                <a href="/single.html">
+                                    <figure class="card01__image"></figure>
+                                    <div class="card01__body">
+                                        <div class="card01__meta">
+                                            <time class="card01__time" datetime="2022-08-09">2022.08.09</time>
+                                            <span class="card01__cat">コラム</span>
+                                        </div>
+                                        <h3 class="card01__title">
+                                            ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide card01">
+                                <a href="/single.html">
+                                    <figure class="card01__image"></figure>
+                                    <div class="card01__body">
+                                        <div class="card01__meta">
+                                            <time class="card01__time" datetime="2022-08-09">2022.08.09</time>
+                                            <span class="card01__cat">コラム</span>
+                                        </div>
+                                        <h3 class="card01__title">
+                                            ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide card01">
+                                <a href="/single.html">
+                                    <figure class="card01__image"></figure>
+                                    <div class="card01__body">
+                                        <div class="card01__meta">
+                                            <time class="card01__time" datetime="2022-08-09">2022.08.09</time>
+                                            <span class="card01__cat">コラム</span>
+                                        </div>
+                                        <h3 class="card01__title">
+                                            ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide card01">
+                                <a href="/single.html">
+                                    <figure class="card01__image"></figure>
+                                    <div class="card01__body">
+                                        <div class="card01__meta">
+                                            <time class="card01__time" datetime="2022-08-09">2022.08.09</time>
+                                            <span class="card01__cat">コラム</span>
+                                        </div>
+                                        <h3 class="card01__title">
+                                            ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide card01">
+                                <a href="/single.html">
+                                    <figure class="card01__image"></figure>
+                                    <div class="card01__body">
+                                        <div class="card01__meta">
+                                            <time class="card01__time" datetime="2022-08-09">2022.08.09</time>
+                                            <span class="card01__cat">コラム</span>
+                                        </div>
+                                        <h3 class="card01__title">
+                                            ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。ここにコラムのタイトルがはいります。
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
-         </article>
-         <!-- ▲記事 -->
+         </section>
+         <!-- ▲コラム -->
     </main>
 
     <!-- ▼フッター -->

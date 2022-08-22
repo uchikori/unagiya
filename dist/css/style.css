@@ -1356,7 +1356,50 @@ a[href^="tel:"] {
   height: auto;
 }
 
-.cta-button__tel {
+.cta-button__text {
+  font-size: 51.2px;
+  font-size: 3.2rem;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0;
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+
+.cta-button_color_brown {
+  display: none;
+}
+
+.cta-button_color_brown__inner {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cta-button_color_brown__icon {
+  width: 80px;
+  width: 5rem;
+  aspect-ratio: 50/71;
+}
+
+.cta-button_color_brown__icon img {
+  height: auto;
+}
+
+.cta-button_color_brown__access {
   font-size: 51.2px;
   font-size: 3.2rem;
   color: #ffffff;
@@ -2221,9 +2264,13 @@ a[href^="tel:"] {
     width: 16rem;
     height: 16rem;
     background-color: #bf8c4e;
-    position: absolute;
-    top: 0;
-    right: 0;
+  }
+
+  .cta-button_color_brown {
+    display: block;
+    width: 16rem;
+    height: 16rem;
+    background-color: #591902;
   }
 
   .container {

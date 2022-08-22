@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="dist/images/favicon.ico" type="image">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="テスト">
+    <title>鰻の成瀬</title>
+    <!-- OGP設定 -->
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:image" content="https://firework.uchiwa-design.net/dist/images/ogp.jpg">
+    <meta property="og:title" content="鈴木工業株式会社">
+    <meta property="og:description" content="テスト">
+    <meta property="og:url" content="https://firework.uchiwa-design.net">
+    <meta property="og:site_name" content="鈴木工業株式会社">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Noto Serif読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- ファーストビュー読み込み -->
+    <link rel="stylesheet" href="dist/css/fv.css">
+    <!-- Swiperスタイル遅延読み込み -->        
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.css" as="style" onload="this.onload=null;this.rel='stylesheet'" >
+    <!-- メインスタイル遅延読み込み -->        
+    <link rel="preload" href="dist/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" >
+</head>
+<body>
+
+    <!-- <div class="splash">
+        <figure class="splash__logo">
+            <img src="dist/images/logo.png" class="fade-up" alt="">
+        </figure>
+    </div> -->
+
+    <!-- ▼ヘッダー -->
+    <header class="header">
+        <div class="header__inner wide-container">
+            <h1 class="header__left">
+                <a href="/" class="logo header__logo"><img src="dist/images/logo.svg" width="370" height="60" alt="鈴木工業株式会社"></a>
+            </h1>
+
+            <div class="header__right">
+                <nav class="gloval-navi">
+                    <ul class="gloval-navi__items">
+                        <li class="gloval-navi__item">
+                            <a href="/front-page.html" class="gloval-navi__link">ホーム</a>
+                        </li>
+                        <li class="gloval-navi__item">
+                            <a href="/about.html" class="gloval-navi__link">鰻の成瀬について</a>
+                        </li>
+                        <li class="gloval-navi__item">
+                            <a href="/column.html" class="gloval-navi__link">うなぎコラム</a>
+                        </li>
+                        <li class="gloval-navi__item">
+                            <a href="#access" class="gloval-navi__link js-anchor">アクセス</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="cta">
+                    <a href="tel:080-6092-5223" class="cta__inner">
+                        <span class="cta__belt">ご予約・お問い合わせ</span>
+                        <p class="cta__tel"><span>tel.</span>012-3456-789</p>
+                    </a>
+                </div>
+
+            </div>
+            <div class="cta-button_color_brown">
+                <a href="tel:080-6092-5223" class="cta-button__inner">
+                    <span class="cta-button__icon"><img src="dist/images/map.svg" width="50" height="71" alt="アクセスボタン"></span>
+                    <p class="cta-button__text">ACCESS</p>
+                </a>
+            </div>
+            <div class="cta-button">
+                <a href="tel:080-6092-5223" class="cta-button__inner">
+                    <span class="cta-button__icon"><img src="dist/images/tel-icon.svg" width="53" height="69" alt="電話ボタン"></span>
+                    <p class="cta-button__text">TEL</p>
+                </a>
+            </div>
+            <div class="humberger header__humberger">
+                <span class="humberger__line"></span>
+                <span class="humberger__line"></span>
+                <span class="humberger__line"></span>
+            </div>
+        </div>
+    </header>
+    <!-- ▲ヘッダー -->
+        
+    <main>
+        <!-- ▼メインビジュアル -->
+        <section class="pg-main-visual">
+            <div class="pg-main-visual__bg">
+                <picture class="pg-main-visual__image">
+                    <source media="(min-width: 857px)" type="image/webp" srcset="dist/images/main-image-concept.webp, dist/images/main-image-concept@2x.webp 2x"> 
+                    <source media="(min-width: 857px)" type="image/jpeg" srcset="dist/images/main-image-concept.jpg, dist/images/main-image-concept@2x.jpg 2x">
+                    <source media="(max-width: 856px)" type="image/webp" srcset="dist/images/main-image-concept-sp@2x.webp"> 
+                    <source media="(max-width: 856px)" type="image/jpeg" srcset="dist/images/main-image-concept-sp@2x.jpg">  
+                    <img srcset="dist/images/main-image-concept.jpg" src="dist/images/main-image-concept.jpg" width="1920" height="500" alt="鰻の成瀬について">
+                </picture>
+            </div>
+            <div class="pg-main-visual__container">
+                <div class="pg-main-visual__textbox">
+                    <h1 class="pg-main-visual__copy">
+                        鰻の成瀬について
+                    </h1>
+                </div>
+            </div>
+        </section>
+         <!-- ▲メインビジュアル -->
+
+         <!-- ▼記事 -->
+         <article class="article">
+            
+         </article>
+         <!-- ▲記事 -->
+    </main>
+
+    <!-- ▼フッター -->
+    <footer class="footer">
+        <div id="access" class="access footer__top">
+            <div class="access__right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.195047221191!2d139.6276526157099!3d35.449965380249026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c6080366139%3A0xcb30693627aa9db5!2z44CSMjMxLTAwNjMg56We5aWI5bed55yM5qiq5rWc5biC5Lit5Yy66Iqx5ZKy55S677yS5LiB55uu77yW77yU4oiS77yW!5e0!3m2!1sja!2sjp!4v1660283637621!5m2!1sja!2sjp" width="960" height="642" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="access__left">
+                <div class="shop-info">
+                    <h2 class="shop-info__title">店舗情報</h2>
+                    <table class="shop-info__data">
+                        <tbody>
+                            <tr>
+                                <th>店名</th>
+                                <td>鰻の成瀬</td>
+                            </tr>
+                            <tr>
+                                <th>住所</th>
+                                <td>
+                                    〒231-0063<br>
+                                    神奈川県横浜市中区花咲町2-64-6<br>
+                                    クリーンビル1F
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>電話番号</th>
+                                <td>012-345-6789</td>
+                            </tr>
+                            <tr>
+                                <th>営業時間</th>
+                                <td>11:30～13:30</td>
+                            </tr>
+                            <tr>
+                                <th>定休日</th>
+                                <td>火曜日</td>
+                            </tr>
+                            <tr>
+                                <th>お支払い</th>
+                                <td>
+                                    現金<br>
+                                    クレジットカード（VISA,Master,JCB）<br>
+                                    電子マネー（PayPay,,,,,,,,,,,,）
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>座席</th>
+                                <td>カウンター席 13席</td>
+                            </tr>
+                            <tr>
+                                <th>駐車場</th>
+                                <td>無し</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__logo">
+                <img src="dist/images/logo-black.svg" width="343" height="51" alt="">
+            </div>
+            <small class="footer__copyright">Copyright 2022 鰻の成瀬 All rights reserved.</small>
+        </div>
+    </footer>
+    <!-- ▲フッター -->
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js"></script>
+<script defer src="dist/js/main.min.js"></script>
+</body>
+</html>

@@ -3,6 +3,7 @@
 jQuery(document).ready(function () {
   loading();
   indicator();
+  menuOpen();
   crossfade();
   anchor();
   swiper();
@@ -35,6 +36,31 @@ function indicator() {
 
     if (location.href.match(target)) {
       jQuery(this).addClass('current');
+    }
+  });
+}
+/**
+ * ドロワーメニュー
+ */
+
+
+function menuOpen() {
+  var humberger = jQuery('.humberger');
+  var spNavi = jQuery('.gloval-navi'); // let body = jQuery('body');
+
+  humberger.on('click', function () {
+    humberger.toggleClass('menu-active');
+    humberger.toggleClass('fixed');
+    spNavi.toggleClass('open'); // body.toggleClass('fixed');
+  });
+}
+
+function resClassRemove() {
+  jQuery(window).on('load resize', function () {
+    var w = jQuery(window).width();
+
+    if (w <= 768) {
+      jQuery('.menu').find('.button__color_orange').removeClass('button__color_orange');
     }
   });
 }
