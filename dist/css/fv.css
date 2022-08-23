@@ -696,6 +696,13 @@ p.text-box {
   letter-spacing: 0;
 }
 
+.row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
 .align-left {
   text-align: left;
 }
@@ -1219,6 +1226,10 @@ p.text-box {
 
   .tab {
     display: block;
+  }
+
+  p.text-box {
+    font-size: 3.2rem;
   }
 
   .ft-mt-200 {

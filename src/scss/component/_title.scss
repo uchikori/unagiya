@@ -92,6 +92,26 @@
             }
         }
     }
+    &_belt_s{
+        @include g.font-style(32px,g.$color-white, 500, 1, 0.1em);
+        background-color: g.$color-brown;
+        white-space: nowrap;
+        font-feature-settings: "palt";
+        font-feature-settings: "pkna";
+        padding: 20px 14px;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        @include g.pc{
+            font-size: 3.2rem;
+            padding: 2rem 1.4rem;
+        }
+        @include g.tab{
+            font-size: 6.4rem;
+            letter-spacing: -0.1em;
+            padding: 1.8rem 3.6rem;
+            writing-mode: horizontal-tb;
+        }
+    }
     &_border_bottom{
         @include g.font-style(60px, g.$color-brown, 600, 1, 0.02em);
         @include g.pc{

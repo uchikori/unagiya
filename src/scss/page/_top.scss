@@ -116,6 +116,89 @@
         }
     }
 }
+//こだわり
+.media-sec{
+    margin-top: 160px;
+    @include g.pc{
+        margin-top: 16rem;
+    }
+    @include g.tab{
+        margin-top: 10rem;
+    }
+    &:first-child{
+        margin-top: 200px;
+        @include g.pc{
+            margin-top: 20rem;
+        }
+    }
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include g.tab{
+            display: block;
+        }
+    }
+    &__thumbnail{
+        width: 50%;
+        position: relative;
+        @include g.tab{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        picture{
+            width: 100%;
+            height: 342px;
+            aspect-ratio: 616/342;
+            overflow: hidden;
+            @include g.pc{
+                height: 34.2rem;
+            }
+            @include g.tab{
+                height: 44rem;
+                aspect-ratio: 792/440;
+                margin-top: 7.2rem;
+            }
+        }
+    }
+    &__title{
+        position: absolute;
+        top: -80px;
+        right: 36px;
+        @include g.pc{
+            top: -8rem;
+            right: 3.6rem;
+        }
+        @include g.tab{
+            position: static;
+        }
+        .row-reverse &{
+            right: auto;
+            left: 36px;
+            @include g.pc{
+                left: 3.6rem;
+            }
+        }
+    }
+    &__text{
+        padding-top: 24px;
+        padding-left: 24px;
+        border-top: solid 1px g.$color-brown;
+        @include g.pc{
+            padding-top: 2.4rem;
+            padding-left: 2.4rem;
+        }
+        @include g.tab{
+            padding-left: 0;
+            margin-top: 8rem;
+        }
+        p{
+            width: calc(580/592)*100%;
+        }
+    }
+}
 //お知らせ
 .news-sec{
     margin-top: 198px;
@@ -418,6 +501,54 @@
         @include g.tab{
             font-size: 3.2rem;
             margin-top: 4rem;
+        }
+    }
+}
+.takeout{
+    margin-top: 110px;
+    @include g.pc{
+        margin-top: 11rem;
+    }
+    @include g.tab{
+        margin-top: 12rem;
+    }
+    &__inner{
+        width: 816px;
+        margin: 0 auto;
+        padding: 102px 0;
+        background-image: url("../images/frame.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        text-align: center;
+        @include g.pc{
+            width: 81.6rem;
+            padding: 10.2rem 0;
+        }
+        @include g.tab{
+            width: 100%;
+            background-image: url("../images/frame-sp.svg");
+            padding: 12.6rem 0;
+        }
+    }
+    &__title{
+        @include g.font-style(32px, g.$color-brown, 500, 1, 0);
+        @include g.pc{
+            font-size: 3.2rem;
+        }
+        @include g.tab{
+            font-size: 6.4rem;
+        }
+    }
+    &__text{
+        margin-top: 40px;
+        @include g.pc{
+            margin-top: 4rem;
+        }
+        @include g.tab{
+            max-width: calc(650/792)*100%;
+            text-align: left;
+            margin: 8rem auto 0;
         }
     }
 }
