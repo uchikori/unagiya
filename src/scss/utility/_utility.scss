@@ -25,7 +25,15 @@ p.text-box{
     flex-direction: row-reverse;
 }
 //テキスト色
-
+.text-white{
+    color: g.$color-white !important;
+}
+.text-red{
+    color: #dc476a !important;
+}
+.text-blue{
+    color: #4774dc !important;
+}
 //テキスト向き
 .align-left{
     text-align: left;

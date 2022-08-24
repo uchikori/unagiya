@@ -703,6 +703,18 @@ p.text-box {
           flex-direction: row-reverse;
 }
 
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-red {
+  color: #dc476a !important;
+}
+
+.text-blue {
+  color: #4774dc !important;
+}
+
 .align-left {
   text-align: left;
 }
